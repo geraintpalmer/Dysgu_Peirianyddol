@@ -5,6 +5,6 @@ Bydd y prosiect yn cynnwys yr dulliau canlynol:
 Clystyru k-modd (K means clustering)
 Atchweliad logistaidd (Logistic regression)
 Bayes naïf (Naïve Bayes)
-Coeden penderfyniadau ag hapgoedwig (Decision trees and random forest)
+Coed penderfynu ag hapgoedwig (Decision trees and random forest)
 Peiriannau cynnal fector (Support vector machines)
 K cymydog agosaf (KNN)
