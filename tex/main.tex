@@ -1,0 +1,44 @@
+\documentclass{report}
+
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+
+
+\usepackage{fullpage}
+\usepackage[parfill]{parskip}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{minted}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc}
+% \usepackage{standalone}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage[welsh]{babel}
+\usepackage{graphicx}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proof}{Proof}
+
+\begin{document}
+    \include{frontcover}
+    \include{diolchadau}
+
+    \tableofcontents
+    \listoffigures
+
+    % The actual content:
+    \include{chapters/Cyflwyniad}
+    \include{chapters/clysyru_k_modd}
+    \include{chapters/Termau}
+
+    % The bibliography:
+    \bibliographystyle{plain}
+    \bibliography{bibliography}
+\end{document}
