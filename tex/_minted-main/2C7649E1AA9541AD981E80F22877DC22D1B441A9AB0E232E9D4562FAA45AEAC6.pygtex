@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+heightvsweight \PYG{o}{\PYGZlt{}\PYGZhy{}} read.csv\PYG{p}{(}\PYG{l+s}{\PYGZdq{}C:/Users/User/Desktop/Dysgu\PYGZus{}Peirianyddol/heightvsweight.csv\PYGZdq{}}\PYG{p}{)}
+View\PYG{p}{(}heightvsweight\PYG{p}{)}
+\end{Verbatim}

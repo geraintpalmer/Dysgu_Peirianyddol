@@ -1,3 +1,9 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{K-means-clustering}
+David M. J. Tax;~Ferdinand van der Heijden; Robert Duin; Dick~de Ridder.
+\newblock Classification, parameter estimation and state estimation: An
+  engineering approach using matlab.
+\newblock 2012.
 
 \end{thebibliography}

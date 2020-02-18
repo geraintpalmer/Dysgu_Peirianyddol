@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+kcymedr \PYG{o}{\PYGZlt{}\PYGZhy{}} kmeans\PYG{p}{(}heightvsweight\PYG{p}{,}\PYG{l+m}{6}\PYG{p}{,} nstart \PYG{o}{=} \PYG{l+m}{50}\PYG{p}{)}
+heightvsweight\PYG{o}{\PYGZdl{}}Clwstwr6 \PYG{o}{\PYGZlt{}\PYGZhy{}} kcymedr\PYG{o}{\PYGZdl{}}cluster
+View\PYG{p}{(}heightvsweight\PYG{p}{)}
+\end{Verbatim}

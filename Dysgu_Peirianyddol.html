@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<title>Dysgu Peirianyddol</title>
+</head>
+<center>
+<h1>Dysgu Peirianyddol</h1>
+</center>
+<h2>Clystyru K-cymedrau</h2>
+
+<h3>Sut yw neud yn Python?</h3>
+
+<xmp>
+import pandas as pd
+import matplotlib.pyplot as plt
+import sklearn.cluster
+</xmp>
+
+<xmp>
+data = pd.read_csv('heightvsweight.csv')
+</xmp>
+
+<xmp>
+data.head()
+</xmp>
+
+<xmp>
+plt.scatter(data['Uchder'], data['Pwysau']);
+plt.xlabel('Uchder')
+plt.ylabel('Pwysau')
+plt.show()
+</xmp>
+
+<xmp>
+kmeans = sklearn.cluster.KMeans(n_clusters=3).fit(data)
+data['Cluster (k=3)'] = kmeans.predict(data)
+</xmp>
+
+<xmp>
+data.head()
+</xmp>
+
+<xmp>
+plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=3)']);
+plt.xlabel('Uchder')
+plt.ylabel('Pwysau')
+plt.show()
+</xmp>
+
+<xmp>
+kmeans = sklearn.cluster.KMeans(n_clusters=6).fit(data)
+data['Cluster (k=6)'] = kmeans.predict(data)
+</xmp>
+
+<xmp>
+data.head()
+</xmp>
+
+<xmp>
+plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=6)']);
+plt.xlabel('Uchder')
+plt.ylabel('Pwysau')
+plt.show()
+</xmp>
+
+<h3>Sut yw neud yn R?</h3>
+
+<xmp>
+install.packages("graphics")
+install.packages("stats")
+install.packages("datasets")
+library(graphics)
+library(stats)
+library(datasets)
+</xmp>
+
+<xmp>
+heightvsweight <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
+View(heightvsweight)
+</xmp>
+
+<xmp>
+attach(heightvsweight)
+</xmp>
+
+<xmp>
+plot(Uchder, Pwysau, pch = 21)
+</xmp>
+
+<xmp>
+kcymedr <- kmeans(heightvsweight,3, nstart = 50)
+</xmp>
+
+<xmp>
+heightvsweight$Clwstwr3 <- kcymedr$cluster	
+</xmp>
+
+<xmp>
+View(heightvsweight)
+</xmp>
+
+<xmp>
+plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue")[unclass(kcymedr$cluster)])
+</xmp>
+
+<xmp>
+kcymedr <- kmeans(heightvsweight,6, nstart = 50)
+heightvsweight$Clwstwr6 <- kcymedr$cluster
+View(heightvsweight)
+</xmp>
+
+<xmp>
+plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue", "yellow", "black", "white")[unclass(kcymedr$cluster)])
+</xmp>
+
+
+</body>
+</html>

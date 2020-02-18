@@ -1,6 +1,6 @@
-\chapter{Clystyru $k$-cymedrau}\label{cha:literature}
+\chapter{Clystyru $k$-cymedr}\label{cha:literature}
 \section{Cefndir}\label{sec:axelrodoriginal}
-Mae clystyru $k$-cymedrau yn ffordd o ddysgu heb oruchwyliaeth, mae'n cymeryd data heb ei labelu ac yn eu sortio i fewn i $k$ wahanol clystyrau yn yr obaith i darganfod rhyw strwythyr doedden ddim yn gwybod gynharach.
+Mae clystyru $k$-cymedr yn ffordd o ddysgu heb oruchwyliaeth, mae'n cymryd data heb ei labelu ac yn eu sortio i mewn i $k$ wahanol glystyrau yn yr obaith i ddarganfod rhyw strwythur doedden ddim yn gwybod gynharach.
 
 \begin{figure}
 \begin{center}
@@ -18,44 +18,44 @@ $\Rightarrow$
 \end{center}
 \end{figure}
 
-I rhoi enghraifft i'r llun uchod, mae'r gwerthoedd ar echelin $x$ yn cynrychioli uchder rhyw person ag yr llall yn cynrychioli pwysau y person. Fel welwn yn Darlun~\ref{fig:Cefndir_Clysteru_k_modd} gallwn weld tri grwp naturiol wedi'i ffurfio. Rydym nawr eisiau eu grwpio yn ffurf Mathemategol. Fysa clystyru $k$-cymedrau medru dosrannu y tri grwp fel welwn ar ochr dde y darlun. 
+I roi enghraifft i'r llun uchod, mae'r gwerthoedd ar echelin $x$ yn cynrychioli uchder rhyw berson ag yr llall yn cynrychioli pwysau'r person. Fel gwelwn yn Ddarlun~\ref{fig:Cefndir_Clysteru_k_modd} gallwn weld tri gr\^{w}p naturiol wedi'i ffurfio. Rydym nawr eisiau eu grwpio yn ffurf Fathemategol. Fysa clystyru $k$-cymedr medru dosrannu'r tri gr\^{w}p fel gwelwn ar ochr dde'r darlun. 
 
 %%Adio mwy ar sut a pam mae'n cael ei ddefnyddio..
 
-\section{Sut mae Clystyru $K$-cymedrau yn gweithio?}
+\section{Sut mae Clystyru $K$-cymedr yn gweithio?}
 
 \subsection{Y Dull}
 
-Mae clystyru $k$-cymedrau yn syml, mae dim ond yn dilyn pedwar cam(REFERENCE)! I wneud yn siwr fod yn ei ffyrf fwyaf cyntefig, fyddan yn defnyddio mesur pellter Ewclidaidd. Yn ogystal fydd rhaid dewis $k$ cyn cychwyn y proses. Mae'n bosib optimeiddio y dewis o $k$, wnawn trafod am hyn hwyrach ymlaen. Dyma pedwar cam yr algorithm a sut fyddym yn edrych pan fyddwn ni yn ei ymgeisio'r algorithm ar y data welwn yn \ref{fig:Cefndir_Clysteru_k_modd}:
+Mae clystyru $k$-cymedr yn syml, mae dim ond yn dilyn pedwar cam \cite{K-means-clustering}. I wneud yn si\^{w}r fod yn ei ffurf fwyaf cyntefig, fyddan yn defnyddio mesur pellter Ewclidaidd. Yn ogystal fydd rhaid dewis $k$ cyn cychwyn y proses. Mae'n bosib optimeiddio'r dewis o $k$, wnawn drafod am hyn hwyrach ymlaen. Dyma pedwar cam yr algorithm a sut fyddem yn edrych pan fyddwn ni yn ei ymgeisio'r algorithm ar y data welwn yn \ref{fig:Cefndir_Clysteru_k_modd}:
 
 \begin{enumerate}
 \item Aseinio pob elfen i un o'r $k$ clystyrau ar hap.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../img/Cam1.jpeg}
 \end{center}
 \end{figure}
 
-\item Cyfrifo y cymedr pob clwstwr.
+\item Cyfrifo'r cymedr pob clwstwr.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../img/ClystyrauCychwynol.jpeg}
 \end{center}
 \end{figure}
 
-\item Aseinio pob elfen unwaith eto i'r clwstwr gydag cymedr agosaf.
+\item Aseinio pob elfen unwaith eto i'r clwstwr gyda chymedr agosaf.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../img/Cam3.jpeg}
 \end{center}
 \end{figure}
 
-\item Ailadrodd camau dau a tri tan fod y creiddiau ddim yn symyd unrhyw mwy.
+\item Ailadrodd camau dau a tri tan fod y creiddiau ddim yn symud unrhyw mwy.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../img/Convergence4.jpeg}
 \end{center}
@@ -65,42 +65,46 @@ Mae clystyru $k$-cymedrau yn syml, mae dim ond yn dilyn pedwar cam(REFERENCE)! I
 
 \subsection{Darn Mathemategol}
 
-Diffiniwn pob clwstwr rydym yn ceisio darganfod fel $C_i$ lle bydd i $\in \{ 1, 2, \dots, k\}$, mae gennym hefyd $n$ pwyntiau data $x_1,x_2,\dots,x_n$. Y darn gyntaf fydd i aseinio phob $x_j$ i rhyw clwstwr $C_i$ ar hap. Yna gan ein fod yn datgelu ein fod yn delio gydag pl\^{a}n Ewclidaidd, mi fyddym yn delio gyda darganfod cymedr pob clwstwr gan y fformiwla canlynol:
-Diffiniwn $S_i$ fel y set o pwyntiau data sydd wedi'i aseinio i clwstwr $C_i$.
+Diffiniwn bob clwstwr rydym yn ceisio darganfod fel $C_i$ lle bydd i $\in \{ 1, 2, \dots, k\}$, mae gennym hefyd $n$ pwyntiau data $x_1,x_2,\dots,x_n$. Y darn gyntaf fydd i aseinio pob $x_j$ i ryw glwstwr $C_i$ ar hap. Yna gan ein bod yn datgelu ein bod yn delio gyda phl\^{a}n Ewclidaidd, mi fyddem yn delio gyda darganfod cymedr pob clwstwr gan y fformiwla ganlynol:
+Diffiniwn $S_i$ fel y set o bwyntiau data sydd wedi'i aseinio i glwstwr $C_i$.
 $$ C_i = \frac{1}{|S_i|}\sum_{x_j \in S_i} {x_j} $$
-Nawr mae pob clwstwr gyda cymedr newydd, fedrym aseinio pob pwynt data i'r craidd agosaf. Fydd hyn yn cael ei gwneud gan mynd drwy pob pwynt data ag cyfrifo y pellter Ewlcidaidd i phob craidd. Yna fydd y pwynt priodol yn cael ei labelu gyda y clwstwr gyda pellter lleiaf o'r craidd ir pwynt data.
+Nawr mae pob clwstwr gyda chymedr newydd, fedrem aseinio pob pwynt data i'r craidd agosaf. Fydd hyn yn cael ei gwneud gan fynd drwy bob pwynt data ag cyfrifo'r pellter Ewclidaidd i bob craidd. Yna fydd y pwynt priodol yn cael ei labelu gyda'r clwstwr gyda phellter lleiaf o'r craidd i'r pwynt data.
 $$ \arg \min_{c_i} dist(c_i,x_j)^2$$
-Unwaith mae'r proses wedi'i cychwyn, does dim ond angen ailadrodd y darn o darganfod y creiddiau newydd ag yna ail labelu'r pwyntiau data.
+Unwaith mae'r proses wedi'i chychwyn, does dim ond angen ailadrodd y darn o ddarganfod y creiddiau newydd ag yna ail labelu'r pwyntiau data.
 
 
 \subsection{Sut i ddarganfod y $K$ orau?}
 
-Mae yna wahanol ffurf i ddarganfod $K$, wnawn edrych ar ddau wahanol ffordd o gwneud hyn. 
+Mae yna wahanol ffurf i ddarganfod $K$, wnawn edrych ar ddau wahanol ffordd o wneud hyn. 
 
 \subsubsection{Dull Penelin}
 
-Mae'r dull penelin yn cymharu'r cyfanswm o swm sgwariau o fewn y clystyrau. Unwaith gennym yr cyfanswm o swm sgwariau o fewn clystyrau i phob $k$ rydym eisiau cymharu; fyddem yn creu plot o phob $k$ yn erbyn eu cyfanswm o swm sgwariau o fewn y clystyrau. Unwaith mae gennym y graff, allwn ei ddadansoddi. 
+Mae'r dull penelin yn cymharu'r cyfanswm o swm sgwariau o fewn y clystyrau. Unwaith gennym y cyfanswm o swm sgwariau o fewn clystyrau i bob $k$ rydym eisiau cymharu; fyddem yn creu plot o bob $k$ yn erbyn eu cyfanswm o swm sgwariau o fewn y clystyrau. Unwaith mae gennym y graff, allwn ei ddadansoddi. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../img/Dull_Penelin.jpeg}
 \end{center}
 \end{figure}
 
-Yn y graff uchod sydd gennym, fydd yn dangos sut mae'r swm sgwariau yn mawr yn cychwyn gyda $k$ sydd yn gwneud synnwyr. O'r pwynt yma wedyn fydd yna newid ystyrlon yn y swm sgwariau. Unwaith mae'r newid ystyrlon yn dod i ben fydd gennym ongl yn cael ei greu lle bydd newid $K$ dim ond yn creu newid ymylol. Y pwynt yma fydd yr optimwm nifer o $K$. Fel gwelwn yn glir yn ein enghraifft ni, mae'n glir fod $K$=3 yw dewis orau ar $K$.
+Yn y graff uchod sydd gennym, fydd yn dangos sut mae'r swm sgwariau yn fawr yn cychwyn gyda $k$=1 sydd yn gwneud synnwyr. O'r pwynt yma wedyn fydd yna newid ystyrlon yn y swm sgwariau. Unwaith mae'r newid ystyrlon yn dod i ben fydd gennym ongl yn cael ei greu lle bydd newid $K$ dim ond yn creu newid ymylol. Y pwynt yma fydd yr optimwm nifer o $K$. Fel gwelwn yn glir yn ein henghraifft ni, mae'n glir fod $K$=3 yw dewis orau ar $K$.
 
 \subsubsection{Dendrogram}
 
-\begin{figure}[h]
+Mae Dendrogram yn fath wahanol iawn i dangos y nifer orau o $k$. Mae'n defnyddio darn o glystyru hierarchaidd i greu diagram canghennog. Mae'r echelin llorweddol yn dangos phob gwrthrych yn ein set o ddata. Mae'r echelin fertigol yn dangos annhebygrwydd. Ar gyfer yr un data, casglon ni:
+
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../img/Dendrogram.jpeg}
 \end{center}
 \end{figure}
 
-\section{Tiwtorial yn R}
-Mi fyddwn yn edrych ar ddata o uchder a pwysau 175 wahanol person. Mi allwch chi lawrlwytho y data yma o fan hyn (INSERT LINK HERE). 
+I ddadansoddi'r Dendrogram mi fyddwn edrych yn bennaf ar yr echelin fertigol. Edrychem allan am y fwyaf annhebygrwydd rhwng cyflwyniad o gangen arall yn y goeden. Welwn ni hyn yn ein henghraifft ni ar \^{o}l i'r drydydd clwstwr cael ei gyflwyno yn dendrogram. Mae hyn yn datganu'r un peth a'r dull penelin.
 
-Yno fydd angen lawrlwytho a gosod y pecynnau "graphics", "stats" ag "datasets" ar eich fersiwn chi o R studio. Ffordd hawdd i gwirio hyn fydd i ddefnyddio y c\^{o}d canlynol:
+\section{Tiwtorial yn R}
+Mi fyddwn yn edrych ar ddata o uchder a phwysau 175 wahanol berson. Mi allwch chi lawrlwytho y data yma o fan hyn. 
+
+Yno fydd angen lawrlwytho a gosod y pecynnau "graphics", "stats" ag "datasets" ar eich fersiwn chi o R studio. Ffordd hawdd i wirio hyn fydd i ddefnyddio'r c\^{o}d canlynol:
 
 \begin{minted}{r}
 install.packages("graphics")
@@ -110,75 +114,75 @@ library(graphics)
 library(stats)
 library(datasets)
 \end{minted}
-Mae'r darn gynta o'r c\^{o}d uchod yn gosod/diweddaru y pecynnau angenrheidiol. Mae'r ail darn yn llwytho'r pecynnau i ein fersiwn ni o R Studio.
+Mae'r darn gyntaf o'r c\^{o}d uchod yn gosod/diweddaru y pecynnau angenrheidiol. Mae'r ail ddarn yn llwytho'r pecynnau i ein fersiwn ni o R Studio.
 
-Nawr mi wnawn mewnforio y data. 
+Nawr mi wnawn fewnforio'r data. 
 
 \begin{minted}{r}
 heightvsweight <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
 View(heightvsweight)
 \end{minted}
 
-Fydd rhaid wneud yn siwr fod eich cyfeiriadur yn gywir i'r lleoliad o eich ffeil chi.
-Ar ol rhedeg y c\^{o}d ddylsai tabl agor mewn arwahan. Ddylsai edrych yn debyg i'r canlynol:
+Fydd rhaid gwneud yn si\^{w}r fod eich cyfeiriadur yn gywir i'r lleoliad o eich ffeil chi.
+Ar \^{o}l rhedeg y c\^{o}d ddylai tabl agor mewn tab arwahan. Ddylai edrych yn debyg i'r canlynol:
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=0.35\linewidth]{../img/Data_yn_R.jpg}
 \label{fig:DataR}
 \end{figure}
 
-Gan fod y data hefo enwau ar gyfer y colofnau, gallwn atodi y data i llwybr chwilio R. Bydd hyn yn gadael i ni cyfeirio i enwau colofnau y data yn ein c\^{o}d fydd yn gwneud yn lawer mwy symlach i ddeallt.
+Gan fod y data hefo enwau ar gyfer y colofnau, gallwn atodi'r data i lwybr chwilio R. Bydd hyn yn gadael i ni gyfeirio at enwau colofnau'r data yn ein c\^{o}d fydd yn gwneud yn lawer mwy symlach i ddeall.
 
 \begin{minted}{r}
 attach(heightvsweight)
 \end{minted}
 
-I gwneud fwy o synwyr o'r data, mi wnawn plotio'r data. Wnawn weld fod yna 3 clwstwr glir. 
+I wneud fwy o synnwyr o'r data, mi wnawn blotio'r data. Wnawn weld fod yna 3 clwstwr clir. 
 
 \begin{minted}{r}
 plot(Uchder, Pwysau, pch = 21)
 \end{minted}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=0.5\linewidth]{../img/ScatterplotR.jpeg}
 \label{fig:ScatterplotR}
 \end{figure}
 
-Rwan rydym yn gallu gweld fod y data yn gallu cael i rhannu i dair clwstwr wahanol, mi wnawn defnyddio y ffyrf mathemategol i'w ddehongli. Rhedwn y canlynol i rhedeg clystyru $k$-cymedrau yn R. Rydym yn defnyddio yr ymresymiad "nstart" i ddewis faint o setiau ar hap o creiddiau wnawn gymeryd. (REFERENCE O SUT MAE FFORMIWLA YN GWEITHIO) 
+R\^{w}an rydym yn gallu gweld fod y data yn gallu cael i rannu i dri chlwstwr gwahanol, mi wnawn ddefnyddio y ffurf Fathemategol i'w ddehongli. Rhedwn y canlynol i redeg clystyru $k$-cymedr yn R. Rydym yn defnyddio'r ymresymiad "nstart" i ddewis faint o setiau ar hap o greiddiau wnawn gymered.
 
 \begin{minted}{r}
 kcymedr <- kmeans(heightvsweight,3, nstart = 50)
 \end{minted}
 
-Allwn nawr adio colofn newydd ir data sef y clystyrau newydd mae'r algorithm wedi'i darganfod.
+Allwn nawr adio colofn newydd i'r data sef y clystyrau newydd mae'r algorithm wedi'i darganfod.
 
 \begin{minted}{r}
 heightvsweight$Clwstwr3 <- kcymedr$cluster
 \end{minted}
 
-Gallwn weld yr newid hyn gan defnyddio'r c\^{o}d o gynnar.
+Gallwn weld y newid hwn gan ddefnyddio'r c\^{o}d o gynnar.
 
 \begin{minted}{r}
 View(heightvsweight)
 \end{minted}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=0.5\linewidth]{../img/Data3_yn_R.jpg}
 \end{figure}
 
-Mae'n bosib fydd yr algorithm wedi rhoi rhif wahanol ar gyfer clystyrau wahanol ond ddylsai yr clystyrau fod yn hafal. Mae hyn oherwydd y setiau ar hap mae'r fformiwla yn ei gymeryd yn cychwyn.
+Mae'n bosib fydd yr algorithm wedi rhoi rhif gwahanol ar gyfer clystyrau gwahanol ond ddylai'r clystyrau fod yn hafal. Mae hyn oherwydd y setiau ar hap mae'r fformiwla yn ei gymered yn cychwyn.
 
-Rhedwn y c\^{o}d canlynol i cael gweld y clystyrau newydd ar graff.
+Rhedwn y c\^{o}d canlynol i gael gweld y clystyrau newydd ar graff.
 
 \begin{minted}{r}
 plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue")[unclass(kcymedr$cluster)])
 \end{minted}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=0.5\linewidth]{../img/3clwstwrR.jpeg}
 \end{figure}
 
-Y nawr mi nawn rhedeg yr algorithm ar gyfer 6 clwstwr i weld yr clystyrau pan fydd $k$=6. 
+Y nawr mi nawn rhedeg yr algorithm ar gyfer 6 clwstwr i weld y clystyrau pan fydd $k$=6. 
 
 \begin{minted}{r}
 kcymedr <- kmeans(heightvsweight,6, nstart = 50)
@@ -186,28 +190,28 @@ heightvsweight$Clwstwr6 <- kcymedr$cluster
 View(heightvsweight)
 \end{minted}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=0.5\linewidth]{../img/Data6_yn_R.jpg}
 \end{figure}
 
-Gwelwn fod yr labelau newydd wedi cael ei ychwanegu i ein tabl. Yna gan plotio graff arall, fedrym weld y 6 clwstwr yn gliriach.
+Gwelwn fod yr labelau newydd wedi cael ei ychwanegu i ein tabl. Yna gan blotio graff arall, fedrem weld y 6 clwstwr yn gliriach.
 
 \begin{minted}{r}
 plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue", "yellow", "black", "white")[unclass(kcymedr$cluster)])
 \end{minted}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=0.5\linewidth]{../img/6clwstwrR.jpeg}
 \end{figure}
 
 
 %Mae'r data iris ar gael iddym drwy'r pecyn "datasets". Yn yr enghraifft top mi wnaethom defnyddio k fel 3, felly hyna be wnawn neud eto.
-%Dyma'r c\^{o}d ar gyfer rhedeg clystyru k-cymedrau:
+%Dyma'r c\^{o}d ar gyfer rhedeg clystyru k-cymedr:
 %\begin{minted}{r}
 %clysteru_tri <- kmeans(iris[,1:4],3, nstart = 20)
 %clysteru_tri 
 %\end{minted}
-%Mae'r llinell gyntaf o c\^{o}d yn rhedeg clystyru k-cymedrau ar y set data iris gyda k=3. Mae'r darn nstart yn cynrychioli faint o dosraniadau i drio yn cychwyn yn erbyn'r ffwythiant amcan, er mwyn dewis y cychwyn orau. Mae'r ail linell yn allbwn yr wybodaeth canlynol:
+%Mae'r llinell gyntaf o c\^{o}d yn rhedeg clystyru k-cymedr ar y set data iris gyda k=3. Mae'r darn nstart yn cynrychioli faint o dosraniadau i drio yn cychwyn yn erbyn'r ffwythiant amcan, er mwyn dewis y cychwyn orau. Mae'r ail linell yn allbwn yr wybodaeth canlynol:
 %\begin{minted}{r}
 %>>>K-means clustering with 3 clusters of sizes 50, 62, 38
 %>>>
@@ -241,12 +245,12 @@ plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue", "yellow", "black", "wh
 %\end{minted}
 %Yn y ffwythiant "plot" uchod, mae'r darn gynta ohono yn cyfeirio tuag at pa data fydd yn cael ei clysteru. Mae'r ail darn yn penodi be fydd pob pwynt data yn cael ei cynrychioli fel pan %mae'r darn dwythaf yn penodi lliw i pob clwstwr.
 
-%Mi wnawn edrych y nawr ar yr set data iris sy'n boblogaidd iawn yn y maes ystadegaeth a gwyddor data. Mae'r data yn cynnwys mesuriadau uchder ag lled petal a setal 150 planhigyn iris. Yn isod gweler lun o allbwn clystyru k-cymedrau yn erbyn y clystyrau gwreiddiol o'r data. Gwelwyd fod yr algorithm yn neud yn wych!
+%Mi wnawn edrych y nawr ar yr set data iris sy'n boblogaidd iawn yn y maes ystadegaeth a gwyddor data. Mae'r data yn cynnwys mesuriadau uchder ag lled petal a setal 150 planhigyn iris. Yn isod gweler lun o allbwn clystyru k-cymedr yn erbyn y clystyrau gwreiddiol o'r data. Gwelwyd fod yr algorithm yn neud yn wych!
 
 
 \section{Tiwtorial yn python}
-Yn y tiwtorial hyn mi wnawn edrych ar yr un data a welom yn y tiwtorial dwythaf.
-I gychwyn fydd rhaid mewnforio y pecynnau pandas, matplotlib.pyplot ag sklearn.cluster drwy rhedeg y c\^{o}d canlynol:
+Yn y tiwtorial hwn mi wnawn edrych ar yr un data a welom yn y tiwtorial diwethaf.
+I gychwyn bydd rhaid mewnforio'r pecynnau pandas, matplotlib.pyplot ag sklearn.cluster drwy redeg y c\^{o}d canlynol:
 
 \begin{minted}{python}
 import pandas as pd
@@ -254,12 +258,12 @@ import matplotlib.pyplot as plt
 import sklearn.cluster
 \end{minted}
 
-Yr rwan mi wnawn mewnforio y data (INSERT LINK HERE) i fewn i ein gwaith gan rhedeg y c\^{o}d:
+Y r\^{w}an mi wnawn fewnforio'r data i mewn i ein gwaith gan redeg y c\^{o}d:
 \begin{minted}{python}
 data = pd.read_csv('heightvsweight.csv')
 \end{minted}
-Fydd rhaid gwneud yn siwr fod y data wedi cael ei gadw yn yr un cyfeiriadur ag yr ffeil rydych yn ei ddefnyddio i rhedeg y c\^{o}d.
-Unwaith fydd wedi cael ei mewnforio, all ni gweld yn fras y ddata gennym ni. 
+Fydd rhaid gwneud yn si\^{w}r fod y data wedi cael ei gadw yn yr un cyfeiriadur ag y ffeil rydych yn ei ddefnyddio i redeg y c\^{o}d.
+Unwaith fydd wedi cael ei mewnforio, allwn ni gweld yn fras y data gennym ni. 
 \begin{minted}{python}
 data.head()
 \end{minted}
@@ -269,7 +273,7 @@ data.head()
 \label{fig:Data1}
 \end{figure}
 
-I weld y ddata mewn ffordd fwy gweledol, wnawn plotio graff gwasgariad o'r data
+I weld y data mewn ffordd fwy gweledol, wnawn blotio graff gwasgariad o'r data
 
 \begin{minted}{python}
 plt.scatter(data['Uchder'], data['Pwysau']);
@@ -278,7 +282,7 @@ plt.ylabel('Pwysau')
 plt.show()
 \end{minted}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.7\linewidth]{../img/Scatterpython.jpeg}
 \caption{Enghraifft o ddata da i cael ei clystyru.}
@@ -286,7 +290,7 @@ plt.show()
 \end{center}
 \end{figure}
 
-Fel gwelwn, mae'r data yn edrych fel ei fod mewn tri clystwr. Felly wnawn defnyddio y ffyrf mathemategol i ddarparu arnyn nhw.
+Fel gwelwn, mae'r data yn edrych fel ei fod mewn tri chlwstwr. Felly wnawn ddefnyddio'r ffurf Fathemategol i ddarparu arnyn nhw.
 
 \begin{minted}{python}
 kmeans = sklearn.cluster.KMeans(n_clusters=3).fit(data)
@@ -299,12 +303,12 @@ data['Cluster (k=3)'] = kmeans.predict(data)
 data.head()
 \end{minted}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=0.35\linewidth]{../img/tabl2.jpg}
 \label{fig:Data2}
 \end{figure}
 
-Fel y gwelwyd, mae'r data wedi'i rhoi i fewn clwstwr a wedi'i labelu gyda rhif y clystwr. Gan bod pob pwynt yn y data nawr gyda label, allwn ni creu y plot eto ond gyda bob clystwr yn lliw gwahanol.
+Fel y gwelwyd, mae'r data wedi'i rhoi i mewn clwstwr ac wedi'i labelu gyda rhif y clwstwr. Gan fod pob pwynt yn y data nawr gyda label, allwn ni creu'r plot eto ond gyda bob clwstwr yn lliw gwahanol.
 
 \begin{minted}{python}
 plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=3)']);
@@ -313,7 +317,7 @@ plt.ylabel('Pwysau')
 plt.show()
 \end{minted}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.7\linewidth]{../img/3clystwrpython.jpeg}
 \caption{Sut ddylsa eich graff edrych gyda 3 clystwr.}
@@ -321,7 +325,7 @@ plt.show()
 \end{center}
 \end{figure}
 
-Fel y gwelwn, gweithiodd yr algorithm yn wych, wnawn nawr trio clysteru $k$-cymedrau gyda $k$ yn hafal i 6.
+Fel y gwelwn, gweithiodd yr algorithm yn wych, wnawn nawr trio clystyru $k$-cymedr gyda $k$ yn hafal i 6.
 
 \begin{minted}{python}
 kmeans = sklearn.cluster.KMeans(n_clusters=6).fit(data)
@@ -332,12 +336,12 @@ data['Cluster (k=6)'] = kmeans.predict(data)
 data.head()
 \end{minted}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \includegraphics[width=0.35\linewidth]{../img/tabl3.jpg}
 \label{fig:Data3}
 \end{figure}
 
-Gwelwn caiff y ddata yn ogystal ei rhoi i fewn i 6 clwystwr wahanol. 
+Gwelwn caiff y data yn ogystal ei rhoi i mewn i 6 clwstwr gwahanol. 
 
 \begin{minted}{python}
 plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=6)']);
@@ -346,7 +350,7 @@ plt.ylabel('Pwysau')
 plt.show()
 \end{minted}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.7\linewidth]{../img/6clystwrpython.jpeg}
 \caption{Sut ddylsa eich graff edrych gyda 6 clystwr.}
@@ -354,4 +358,4 @@ plt.show()
 \end{center}
 \end{figure}
 
-Dyma sut dylsa eich ddata edrych fel ar ol a prosesu drwy clysteru 6-cymedrau. 
+Dyma sut dylaf eich data edrych fel ar \^{o}l a phrosesu drwy glystyru 6-cymedr. 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.31)  3 FEB 2020 21:07
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.31)  18 FEB 2020 14:18
 entering extended mode
 **./main.tex
 (main.tex
@@ -1320,72 +1320,215 @@ Pennod 1.
 
  (chapters/Clystyru_k_modd.tex
 Pennod 2.
-File: ../img/clystyrau_k_modd.png Graphic file (type bmp)
-<../img/clystyrau_k_modd.png>
-File: ../img/enghraifftclystyru.jpeg Graphic file (type bmp)
-<../img/enghraifftclystyru.jpeg>
-File: ../img/Actualclassification.jpeg Graphic file (type bmp)
-<../img/Actualclassification.jpeg>
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: ../img/Scatterpython.jpeg Graphic file (type bmp)
+<../img/Scatterpython.jpeg>
+File: ../img/3clystwrpython.jpeg Graphic file (type bmp)
+<../img/3clystwrpython.jpeg>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 25.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 25.
 
 [5
 
 
 
 ]
+File: ../img/Cam1.jpeg Graphic file (type bmp)
+<../img/Cam1.jpeg>
+File: ../img/ClystyrauCychwynol.jpeg Graphic file (type bmp)
+<../img/ClystyrauCychwynol.jpeg>
+File: ../img/Cam3.jpeg Graphic file (type bmp)
+<../img/Cam3.jpeg>
+File: ../img/Convergence4.jpeg Graphic file (type bmp)
+<../img/Convergence4.jpeg>
+ [6]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 76.
+
+File: ../img/Dull_Penelin.jpeg Graphic file (type bmp)
+<../img/Dull_Penelin.jpeg>
+[7]
+File: ../img/Dendrogram.jpeg Graphic file (type bmp)
+<../img/Dendrogram.jpeg>
 \openout3 = `main.pyg'.
 
  (_minted-main/default-pyg-prefix.pygstyle) (_minted-main/default.pygstyle)
-(_minted-main/D9517581C7E21C224CEC331B5E73C760D1B441A9AB0E232E9D4562FAA45AEAC6.
-pygtex)
-\openout3 = `main.pyg'.
-
-
-(_minted-main/EED2F0D03798FF333D937D1DB20F9263D1B441A9AB0E232E9D4562FAA45AEAC6.
-pygtex [6]
+(_minted-main/040FC9531CEAE77EC032CD0990D4D4ECD1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex [8]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 14.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
 )
 \openout3 = `main.pyg'.
 
 
-(_minted-main/6361EF2926D960FB50FCDB85DB43A9BDD1B441A9AB0E232E9D4562FAA45AEAC6.
-pygtex)) [7]
+(_minted-main/2C7649E1AA9541AD981E80F22877DC22D1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex)
+File: ../img/Data_yn_R.jpg Graphic file (type bmp)
+<../img/Data_yn_R.jpg>
+\openout3 = `main.pyg'.
+
+
+(_minted-main/E049E19948A9437A35E2BAAC39F28DF1D1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/5B09A3AAD8DE8B2D67976EA631081759D1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex)
+File: ../img/ScatterplotR.jpeg Graphic file (type bmp)
+<../img/ScatterplotR.jpeg>
+ [9]
+\openout3 = `main.pyg'.
+
+
+(_minted-main/C45343C0588809B14576215074DD4D8AD1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/23D36767BF3B4BADAA482A13FD025005D1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/53FACC5E90FBF752D7FABEDB9820B6E4D1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex)
+File: ../img/Data3_yn_R.jpg Graphic file (type bmp)
+<../img/Data3_yn_R.jpg>
+\openout3 = `main.pyg'.
+
+
+(_minted-main/629EB4718E1E8CA45D8571914EF6137BD1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex [10])
+File: ../img/3clwstwrR.jpeg Graphic file (type bmp)
+<../img/3clwstwrR.jpeg>
+\openout3 = `main.pyg'.
+
+
+(_minted-main/9321D857065F9D2650817C568BE63CA5D1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex)
+File: ../img/Data6_yn_R.jpg Graphic file (type bmp)
+<../img/Data6_yn_R.jpg>
+\openout3 = `main.pyg'.
+
+
+(_minted-main/1AE9387B8DFB20F534EF606461A8DD7DD1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex)
+File: ../img/6clwstwrR.jpeg Graphic file (type bmp)
+<../img/6clwstwrR.jpeg>
+ [11]
+\openout3 = `main.pyg'.
+
+
+(_minted-main/37D5636712300F29E8AEBCD73BD217C44FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/B3AAC55B654E77F393309E147D0585274FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/199065406915E6291E456A854E4434804FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+File: ../img/tabl1.jpg Graphic file (type bmp)
+<../img/tabl1.jpg>
+\openout3 = `main.pyg'.
+
+
+(_minted-main/D8E37D60A5C41A59711611E7AC9A54694FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+File: ../img/Scatterpython.jpeg Graphic file (type bmp)
+<../img/Scatterpython.jpeg>
+ [12]
+\openout3 = `main.pyg'.
+
+
+(_minted-main/287B77542329F48D67E48BC6E0BCFC874FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/199065406915E6291E456A854E4434804FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+File: ../img/tabl2.jpg Graphic file (type bmp)
+<../img/tabl2.jpg>
+\openout3 = `main.pyg'.
+
+
+(_minted-main/313D7F43B3FB494DAE325C4BBC2AB4D54FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+File: ../img/3clystwrpython.jpeg Graphic file (type bmp)
+<../img/3clystwrpython.jpeg>
+ [13]
+\openout3 = `main.pyg'.
+
+
+(_minted-main/17AD1044AC0CBB1E4D5F4D5664468A9C4FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/199065406915E6291E456A854E4434804FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+File: ../img/tabl3.jpg Graphic file (type bmp)
+<../img/tabl3.jpg>
+\openout3 = `main.pyg'.
+
+
+(_minted-main/7692008EBEC9E094892029AB6EFAB20A4FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+File: ../img/6clystwrpython.jpeg Graphic file (type bmp)
+<../img/6clystwrpython.jpeg>
+ [14]) [15]
 \openout2 = `chapters/Termau.aux'.
 
  (chapters/Termau.tex
 Pennod 3.
-) [8
+) [16
 
 
 
-] (main.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [9
+] (main.bbl) [17
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
- (main.aux (frontcover.aux) (diolchadau.aux) (chapters/Cyflwyniad.aux)
-(chapters/Clystyru_k_modd.aux) (chapters/Termau.aux))
+ (main.aux (frontcover.aux) (diolchadau.aux)
+(chapters/Cyflwyniad.aux) (chapters/Clystyru_k_modd.aux) (chapters/Termau.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BDFCC7075E1A2FB9FA278B036C35BDA3;540.
+(rerunfilecheck)             Checksum: 955C272093868A22A50C061261CD8F54;1321.
 runsystem(del main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 38022 strings out of 427232
- 713563 string characters out of 3141650
- 900776 words of memory out of 3000000
- 41994 multiletter control sequences out of 15000+200000
- 534477 words of font info for 43 fonts, out of 3000000 for 9000
+ 38262 strings out of 427232
+ 722781 string characters out of 3141650
+ 902416 words of memory out of 3000000
+ 42161 multiletter control sequences out of 15000+200000
+ 545321 words of font info for 87 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,5n,67p,814b,2146s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (10 pages).
+Output written on main.pdf (18 pages).

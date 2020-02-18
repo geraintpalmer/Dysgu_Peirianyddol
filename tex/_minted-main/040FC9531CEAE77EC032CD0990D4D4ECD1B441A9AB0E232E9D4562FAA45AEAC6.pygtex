@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+install.packages\PYG{p}{(}\PYG{l+s}{\PYGZdq{}graphics\PYGZdq{}}\PYG{p}{)}
+install.packages\PYG{p}{(}\PYG{l+s}{\PYGZdq{}stats\PYGZdq{}}\PYG{p}{)}
+install.packages\PYG{p}{(}\PYG{l+s}{\PYGZdq{}datasets\PYGZdq{}}\PYG{p}{)}
+\PYG{k+kn}{library}\PYG{p}{(}graphics\PYG{p}{)}
+\PYG{k+kn}{library}\PYG{p}{(}stats\PYG{p}{)}
+\PYG{k+kn}{library}\PYG{p}{(}datasets\PYG{p}{)}
+\end{Verbatim}
