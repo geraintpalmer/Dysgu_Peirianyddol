@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{ymarfer} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{sample}\PYG{p}{(}\PYG{n}{frac} \PYG{o}{=} \PYG{l+m+mf}{0.7}\PYG{p}{)}
+\PYG{n}{profi} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{drop}\PYG{p}{(}\PYG{n}{ymarfer}\PYG{o}{.}\PYG{n}{index}\PYG{p}{)}
+\end{Verbatim}

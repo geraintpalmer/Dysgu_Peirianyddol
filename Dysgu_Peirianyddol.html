@@ -11,19 +11,30 @@
 
 <h3>Sut yw neud yn Python?</h3>
 
+Yn y tiwtorial hwn mi wnawn edrych ar yr un data a welom yn y tiwtorial diwethaf. I gychwyn bydd rhaid
+llwytho’r pecynnau pandas, matplotlib.pyplot ag sklearn.cluster drwy redeg y côd canlynol:
+
 <xmp>
 import pandas as pd
 import matplotlib.pyplot as plt
 import sklearn.cluster
 </xmp>
 
+Y rŵan mi wnawn lwytho’r data i mewn i’n gwaith gan redeg y côd:
+
 <xmp>
 data = pd.read_csv('heightvsweight.csv')
 </xmp>
 
+Mae’r string sydd mewnbwn y ffwythiant pd.read_csv yn cyfeirio at y lleoliad ar ein cyfrifiadur lle gallwn
+ganfod y ffeil csv priodol. Rhaid gwneud yn siŵr eich bod yn defnyddio’r lleoliad cywir i’r lleoliad o’ch ffeil
+chi. Unwaith fydd wedi cael ei llwytho, allwn ni gweld yn fras y data gennym ni.
+
 <xmp>
 data.head()
 </xmp>
+
+I weld y data mewn ffordd fwy gweledol, wnawn blotio graff gwasgariad o’r data.
 
 <xmp>
 plt.scatter(data['Uchder'], data['Pwysau']);
@@ -32,14 +43,25 @@ plt.ylabel('Pwysau')
 plt.show()
 </xmp>
 
+
+
+
+Fel gwelwn, mae’r data yn edrych fel ei fod mewn tri chlwstwr. Felly wnawn ddefnyddio’r ffurf algorithm
+dysgu peirianyddol i’w labelu.
+
 <xmp>
 kmeans = sklearn.cluster.KMeans(n_clusters=3).fit(data)
 data['Cluster (k=3)'] = kmeans.predict(data)
 </xmp>
 
+Gallwn weld y newid hwn gan ddefnyddio’r un côd a ddefnyddion yn gynharach.
+
 <xmp>
 data.head()
 </xmp>
+
+Fel y gwelwyd, mae’r data wedi’i rhoi i mewn i dri chlwstwr ac wedi’i labelu gyda rhif y clwstwr. Gan fod
+pob pwynt yn y data nawr gyda label, allwn ni creu’r plot eto ond gyda bob clwstwr yn lliw gwahanol.
 
 <xmp>
 plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=3)']);
@@ -48,14 +70,25 @@ plt.ylabel('Pwysau')
 plt.show()
 </xmp>
 
+Sy’n rhoi:
+
+
+
+Fel y gwelwn, gweithiodd yr algorithm yn wych. Wnawn nawr trio clystyru k-cymedr gyda k yn hafal i
+6.
+
 <xmp>
 kmeans = sklearn.cluster.KMeans(n_clusters=6).fit(data)
 data['Cluster (k=6)'] = kmeans.predict(data)
 </xmp>
 
+Sy’n rhoi:
+
 <xmp>
 data.head()
 </xmp>
+
+Gallwn hefyd gweld canlyniad rhoi’r data i mewn i 6 clwstwr gwahanol:
 
 <xmp>
 plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=6)']);
@@ -64,7 +97,18 @@ plt.ylabel('Pwysau')
 plt.show()
 </xmp>
 
+Sy’n rhoi:
+
+
+
+
+
 <h3>Sut yw neud yn R?</h3>
+
+Mi fyddwn yn edrych ar ddata o uchder a phwysau 175 wahanol berson. Mi allwch chi lawrlwytho y data
+yma o fan hyn.
+Yno fydd angen lawrlwytho a gosod y pecynnau graphics, stats ag datasets ar eich cyfrifiadur. Ffordd
+hawdd i wirio hyn fydd i ddefnyddio’r côd canlynol:
 
 <xmp>
 install.packages("graphics")
@@ -75,34 +119,80 @@ library(stats)
 library(datasets)
 </xmp>
 
-<xmp>
-heightvsweight <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
-View(heightvsweight)
-</xmp>
+Mae’r darn gyntaf o’r côd uchod yn gosod/diweddaru’r pecynnau angenrheidiol. Mae’r ail ddarn yn llwytho’r
+pecynnau i ein sesiwn ni.
+Nawr mi wnawn lwytho’r data.
 
 <xmp>
-attach(heightvsweight)
+uchderpwysau <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
+View(uchderpwysau)
 </xmp>
+
+Mae’r string sydd mewnbwn y ffwythiant read.csv yn cyfeirio at y lleoliad ar ein cyfrifiadur lle gallwn
+ganfod y ffeil csv priodol. Rhaid gwneud yn siŵr eich bod yn defnyddio’r lleoliad cywir i’r lleoliad o’ch ffeil
+chi. Ar ôl rhedeg y côd ddylai eich data edrych yn debyg i’r canlynol:
+
+
+
+Gan fod y data hefo enwau ar gyfer y colofnau, gallwn atodi’r data i lwybr chwilio R. Bydd hyn yn gadael i
+ni gyfeirio at enwau colofnau’r data yn ein côd fydd yn gwneud yn lawer mwy symlach i ddeall.
+
+
+<xmp>
+attach(uchderpwysau)
+</xmp>
+
+I wneud fwy o synnwyr o’r data, mi wnawn blotio’r data.
 
 <xmp>
 plot(Uchder, Pwysau, pch = 21)
 </xmp>
 
-<xmp>
-kcymedr <- kmeans(heightvsweight,3, nstart = 50)
-</xmp>
+Sy’n rhoi:
+
+
+
+
+Gwelwn fod yna 3 clwstwr clir.
+Rŵan rydym yn gallu tybio fod y data yn gallu cael i rannu i dri chlwstwr gwahanol, mi wnawn ddefnyddio’r
+algorithm dysgu peirianyddol i’w ddehongli. Rhedwn y canlynol i redeg clystyru k-cymedr yn R. Rydym yn defnyddio’r ymresymiad nstart i ddewis faint o setiau ar hap o ddata wedi’i labelu wnawn gymered. Welwn enghraifft o’r set ar hap hyn yn Darlun 1. Rydym yn neud hyn i wneud yn fwy debygol i ni ddarganfod yr
+uchafbwynt eang, mae hyn oherwydd mae yna gymaint o uchafbwyntiau lleol.
 
 <xmp>
-heightvsweight$Clwstwr3 <- kcymedr$cluster	
+kcymedr <- kmeans(uchderpwysau,3, nstart = 50)
 </xmp>
 
+Allwn nawr adio colofn newydd i’r data sef y clystyrau newydd mae’r algorithm wedi’i darganfod.	
+
 <xmp>
-View(heightvsweight)
+uchderpwysau$Clwstwr3 <- kcymedr$cluster	
 </xmp>
+
+Gallwn weld y newid hwn gan ddefnyddio’r un côd a ddefnyddion yn gynharach.
+
+<xmp>
+View(uchderpwysau)
+</xmp>
+
+
+
+Mae’n bosib fydd yr algorithm wedi labeli’r clystyrau gwahanol gyda rhifau gwahanol i’r hyn a welwch fan
+hyn, ddylai’r clystyrau ei hun fod yn hafal. Mae hyn oherwydd y setiau ar hap cychwynnol mae’r algorithm
+yn ei gymered i gychwyn.
+
+Rhedwn y côd canlynol liwio’r clystyrau newydd ar graff.
 
 <xmp>
 plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue")[unclass(kcymedr$cluster)])
 </xmp>
+
+Sy’n rhoi:
+
+
+
+
+I gymharu, nawr mi nawn rhedeg yr algorithm ar gyfer 6 clwstwr i weld y clystyrau pan fydd k = 6.
+
 
 <xmp>
 kcymedr <- kmeans(heightvsweight,6, nstart = 50)
@@ -110,10 +200,17 @@ heightvsweight$Clwstwr6 <- kcymedr$cluster
 View(heightvsweight)
 </xmp>
 
+
+
+Gwelwn fod y labeli newydd wedi cael ei ychwanegu i’n tabl. Yna gan blotio graff arall, fedrem weld y 6
+clwstwr yn gliriach.
+
 <xmp>
-plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue", "yellow", "black", "white")[unclass(kcymedr$cluster)])
+lliwiau <- c("red","green","blue", "yellow", "black", "white")
+plot(Uchder, Pwysau, pch = 21, bg=lliwiau[unclass(kcymedr$cluster)])
 </xmp>
 
+Sy’n rhoi:
 
 </body>
 </html>

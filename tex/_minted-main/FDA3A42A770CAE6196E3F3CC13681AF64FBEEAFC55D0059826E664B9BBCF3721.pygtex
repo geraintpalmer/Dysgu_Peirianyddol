@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{1}\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{n+nb}{sum}\PYG{p}{((}\PYG{n}{clf}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{X\PYGZus{}profi}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{n}{y\PYGZus{}profi}\PYG{p}{)}\PYG{o}{**}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{y\PYGZus{}profi}\PYG{p}{))}
+
+\PYG{l+m+mf}{0.91666666666666663}
+\end{Verbatim}

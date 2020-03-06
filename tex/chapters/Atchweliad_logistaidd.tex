@@ -1,0 +1,304 @@
+\chapter{Atchweliad logistaidd}\label{cha:Atchweliad_logistaidd}
+\section{Cefndir}
+Defnyddiwn atchweliad logistaidd i fodelu'r tebygolrwydd o ddosbarthu gwrthrych i mewn i setiau deuaidd. Mae'n ddull o ddysgu dan oruchwyliaeth sy'n cael ei ddefnyddio yn aml yn academ\"{i}au a diwydiannau. Gall y atchweliad cael ei ddefnyddio i weld os mae rhywun yn curo/colli, s\^{a}l/iachus neu basio/methu mewn rhyw sefyllfa benodol. Gall y syniad yma cael ei ymestyn, gall wahanol atchweliadau logistaidd cael ei rhoi yn baralel i geisio rhoi'r tebygolrwydd o liw llygaid rhyw berson er enghraifft. Mewn termau mwy cyffredinol, gall ymestyn atchweliadau logistaidd i weithio ar setiau o labeli di-deuaidd. O hyn ymlaen fyddem yn edrych ar un atchweliad ar un waith, felly fydd y setiau o labeli yn ddeuaidd.
+
+Mae'n hawdd delweddu sut fydd atchweliad logistaidd gydag un newidyn annibynnol. Gwelwn fod y model yn edrych fel y graff yn ddarlun~\ref{Enghraifft_o_atchweliad_logistaidd} pan hyn yw'r sefyllfa.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{../img/Atchweliad_logistaidd.jpeg}
+\label{fig:Enghraifft_o_atchweliad_logistaidd}
+\caption{Enghraiff o atchweliad logistaidd.}
+\end{center}
+\end{figure}
+
+Gwelwn yn y graff nesaf fod y plot yn dangos ein data yn wych.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{../img/atchweliad_logistaidd_pwyntiau.jpeg}
+\label{fig:Enghraifft_o_atchweliad_logistaidd_pwyntiau}
+\caption{Enghraiff o atchweliad logistaidd gyda labelau.}
+\end{center}
+\end{figure}
+
+Mae hyn hyd yn oed fwy cywir pan fyddem yn cymharu atchweliad logistaidd i atchweliad llinol.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{../img/cymharu_llinol.jpeg}
+\label{fig:Enghraifft_o_atchweliad_llinol}
+\caption{Enghraiff o atchweliad llinol i ein data.}
+\end{center}
+\end{figure}
+
+\section{Sut mae Atchweliad logistaidd yn gweithio?}
+
+Wnawn ddiffinio'r fector sy'n cynnwys gwybodaeth am berson $j$ ($j \in {1,\dots,n}$) gyda $\mathbf{x}_j$ sydd hefo dimensiwn o $m$ (hynny yw bod yna $m$ priodoleddau). Yn ogystal, wnawn ddiffinio $y_j$ fel label deuaidd i berson $j$. Yna gydag ein data fydd rhaid i ni wahanu'r data i mewn i ddata ymarfer ac ddata profi. Fydd hyn yn cael ei wneud ar hap. Felly fydd gennym:
+
+Data ymarfer - $\mathbf{x}_j$ a $y_j$ ar gyfer $j \in \{ 1,\dots,k\}$ lle mae $k<n$
+
+Data profi - $\mathbf{x}_j$ a $y_j$ ar gyfer $j \in \{ k+1,\dots,n \}$
+
+Nawr wnawn edrych ar y ffwythiant logistaidd, lle mae $z \in (-\infty,\infty)$:
+
+$$ f(z) = \frac{1}{1+e^{-z}} $$ 
+
+Mae'r model logistaidd yn cymryd y ffurf logit, mae hyn yn cael ei ddangos yn hafaliad~\ref{eqn:logit}.
+
+\begin{equation}\label{eqn:logit} 
+    z = \alpha + \beta_{1}X_{1} + \dots + \beta_{m}X_{m} 
+\end{equation}
+
+Felly mae'r hafaliad yn dangos y model yn hafaliad~\ref{eqn:modellog}.
+
+\begin{equation}\label{eqn:modellog}
+    P(\mathbf{x}) = P(y = 1 | x_1 \dots x_k) = \frac{1}{1+e^{-( \alpha + \sum_{i=1}^{m} \beta_{i}x_{i})}} 
+\end{equation}
+
+\subsection{Yr Algorithm}
+
+Fydd $\alpha$ a $\mathbf{\beta}$ y paramedrau fyddem yn trio amcangyfrif. I amcangyfrif hyn wnawn ddefnyddio'r dull amcangyfrif tebygoliaeth fwyaf. Cymerwn $\hat{\mathbf{\theta}}$ i fod y fector o baramedrau fyddem yn amcangyfrif. Yna mae gennym y amcangyfrif tebygoliaeth ganlynol a fyddem yn trio cael y gwerth agosaf i $1$:
+
+$$ L(\hat{\mathbf{z}}) = \prod_{s \in y_{i}=1} p(x_i) \prod_{s \in y_{i}=0} (1 - p(x_i))$$
+
+Sydd yn gallu cael ei symleiddio i:
+
+$$ L(\hat{\mathbf{z}}) = \prod_{i=1}^{k} p(x_i)^{y_i} (1 - p(x_i))^{1-y_i} $$
+
+Nawr fyddem yn cymryd y log o'r amcangyfrif tebygoliaeth.
+
+$$ \log L(\hat{\mathbf{z}}) = \sum_{i=1}^{n} y_{i} log(p(x_{i})) + (1-y_{i}) log(1-p(x_{i})) $$
+
+Sydd yn symleiddio i:
+
+$$ \log L(\hat{\mathbf{z}}) = \sum_{i=1}^{n} y_{i} log(\frac{1}{1 + e^{-\hat{\mathbf{z}}\mathbf{x}}}) + (1 - y_i) log(\frac{e^{-\hat{\mathbf{z}}\mathbf{x}}}{1 + e^{-\hat{\mathbf{z}}}}) $$
+
+ac yna..
+
+$$ \log L(\hat{\mathbf{z}}) = \sum_{i=1}^{n} y_i \hat{\mathbf{z}} x_i - \log(1 + e^{\hat{\mathbf{z}} x_i}) $$
+
+Yna mae gennym y log o'r amcangyfrif tebygoliaeth. Rydym eisiau darganfod y gwerth o $z$ lle mae'r log o'r amcangyfrif tebygoliaeth ar ei fwyaf.
+
+$$ \hat{\mathbf{z}} = \arg \max_{\mathbf{z}} \log L(\mathbf{z})  $$
+
+Does yna ddim ffordd bendant o ddarganfod y rhif/rhifau sy'n bodloni'r hafaliad uchod, fydd angen defnyddio algorithmau fel swm lleiaf sgwariau wedi eu hail bwyso drwy iteriadau neu ddisgyniad fwyaf fel gwelwn yn y algorithmau yn R ac python yn y drefn honno. 
+
+(ANGEN ADIO DARN AM Y DAU ALGORITHM)
+
+Unwaith mae gennym amcangyfrif o'r paramedrau, mae gennym y model logistaidd ac felly dydi o ddim ond yn gwestiwn o roi ein data profi $x_j$ i mewn i'r model. Fel allbwn cawn rif rhwng $0$ ac $1$, yna wnawn talgrynnu'r allbwn. Wedyn mae gennym ein rhagfynegiad am label pob person, yna gallwn ddarganfod cyfradd llwyddiant ein model gan:
+
+$$ 1 - \sum_{j = k+1}^{n} \frac{(P(\mathbf{x}_j) - y_j)^{2}}{n - k} $$
+
+
+\section{Tiwtorial yn R}
+
+Yn yr enghraifft hon, fyddwn yn edrych ar ddata ar 1000 o bobol, fydd y data yn cynnwys gwybodaeth ar uchder, pwysau, maint gwasg, oed, rhyw ag oes gan y person diabetes. Mae'n bosib lawrlwytho'r data oddi yma: (INSERT LINK). 
+
+Ar gyfer gwneud atchweliad logistaidd, rydym dim ond angen y pecyn \mintinline{R}{stats} a wnawn ei lawrlwytho a'i gosod gan redeg y canlynol:
+
+\begin{minted}[bgcolor=green!7]{r}
+install.packages("stats")
+library(stats)
+\end{minted}
+
+Yna fydd rhaid i ni gael y data i mewn i ein consol gan lwytho'r data i mewn a'i arbed fel newidyn. Fydd rhaid neud yn si\^{w}r fod y ffwythiant \mintinline{R}{read.csv} yn cael ei chyfeirio tuag at y lleoliad cywir o le mae eich data chi wedi'i gadw.
+
+\begin{minted}[bgcolor=green!7]{r}
+data <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/data_logistic.csv")
+\end{minted}
+
+Unwaith ei fod ar ein consol, mae'n bosib gweld y data:
+
+\begin{minted}[bgcolor=green!7]{r}
+View(data)
+\end{minted}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{../img/data_diabetes_r.jpg}
+\end{center}
+\end{figure}
+
+Nawr wnawn rannu'r data felly fod data ymarfer yn cael $70\%$ o'r data ac mae'r data profi yn cael $30\%$ o'r data. Fyddwn yn rhannu'r data ar hap. 
+
+\begin{minted}[bgcolor=green!7]{r}
+rhifau <- c(1:1000)
+rhifauymarfer <- sample(x = rhifau, size = 700, replace = FALSE)
+rhifauprofi <- setdiff(rhifau, rhifauymarfer)
+\end{minted}
+
+Mae'r c\^{o}d uchod yn rhannu'r setiau gan ddefnyddio eu cofnod o fynediad (rhif y rhes) yn y data ac yno mae'r c\^{o}d isod yn rhannu'r fectorau i mewn i setiau arwahan.  
+
+\begin{minted}[bgcolor=green!7]{r}
+ymarfer <- data[rhifauymarfer,] 
+profi <- data[rhifauprofi,]
+\end{minted}
+
+Nawr rydym yn barod i greu'r model logistaidd. I greu'r model fyddem yn rhedeg y c\^{o}d gan ddefnyddio y ffwythiant \mintinline{R}{glm}, sydd yn fyr am "Generalized Linear Models" sydd yn golygu gall y ffwythiant cael ei ddefnyddio am lawer fwy o atchweliadau na logistaidd yn unig. Oherwydd hyn mae'n bwysig i gofio rhoi'r opsiwn o \mintinline{R}{family} yn hafal i binomial. I ddilyn strwythur o'r algorithm, mae'n bwysig neud yn si\^{w}r fod rydym yn creu'r model o'r data ymarfer yn unig. 
+
+\begin{minted}[bgcolor=green!7]{r}
+atchweliad <- glm(Diabetes ~ Uchder + Pwysau + Oed + Rhyw + MaintGwasg,
+                  family = binomial,
+                  data = ymarfer)
+\end{minted}
+
+Unwaith mae'r model wedi'i greu, gallwn weld eu paramedrau sydd wedi cael ei amcangyfrif:
+
+\begin{minted}[bgcolor=green!7]{r}
+atchweliad$coefficients
+\end{minted}
+
+\verbatiminput{allbwn.txt}
+
+Felly mae'r model sydd gennym yn edrych fel i dri lle degol:
+
+$$ P(\mathbf{x}) = \frac{1}{1 + e^{-22.858 + 0.254 x_{Uchder} - 0.215 x_{Pwysau} - 0.057 x_{Oed} + 8.074 x_{Rhyw} + 0.003 x_{MaintGwasg}}} $$
+
+Gan fod ein model wedi'i chwblhau, gallwn weld sut mae'n perfformio yn penderfynu os oes gan bobl y set profi diabetes ta ddim. Geith hyn ei wneud yn defnyddio'r ffwythiant \mintinline{R}{predict} a dewis yr opsiwn \mintinline{R}{type} fel "response" i gael allbwn o debygolrwydd. Heb wneud hyn, fydd yr allbwn yn defnyddio'r ffurf logit fel gwelwn yn hafaliad~\ref{eqn:logit}
+
+\begin{minted}[bgcolor=green!7]{r}
+canlyniad <- round(predict(object = atchweliad, newdata = profi, type = "response"), digits = 0)
+canlyniad <- unname(canlyniad)
+\end{minted}
+
+Fyddem yn ogystal yn talgrynnu'r tebygolrwydd o bob person i cael dewis ar os gennym ddiabetes ta ddim. Wedyn fyddem yn tynnu i ffwrdd y rhifau o'r rhesi ar y fector o labeli. Nawr gennym y rhagfynegiad a'r canlyniadau gwreiddiol, gallwn gyfrifo'r canran o'r ddau set sy'n debyg. Gallwn gyfrifo yn y ffurf ganlynol gan fod ein setiau yn ddeuaidd.
+
+\begin{minted}[bgcolor=green!7]{r}
+1-(sum((test[,6]-unname(canlyniad))**2)/length(test[,6]))
+
+0.8833333
+\end{minted}
+
+Fel y gwelwn, mae ein model gydag effeithiolrwydd o $88\%$ ar gyfer y data sydd gennym. Gallwn ni defnyddio y model rydym wedi creu i benderfynu ar os gan berson newydd ar hap diabetes neu ddim. Gwelwn hyn gan gyflwyno dyn gydag uchder o 160, pwysau 92, maint gwasg o 34 ag ugain oed yn y c\^{o}d isod: 
+
+\begin{minted}[bgcolor=green!7]{r}
+unname(round(predict(object = atchweliad, 
+                     newdata = data.frame(Uchder = 160,
+                                          Pwysau = 92, 
+                                          MaintGwasg = 34, 
+                                          Oed = 20, 
+                                          Rhyw = "Gwryw"), 
+                     type = "response"),
+             digits = 0))
+
+0
+\end{minted}
+
+Am y person yma gwelwn fod y model wedi rhagfynegu fod does ganddo ddim diabetes. Os wnawn ystyried person gyda'r un nodweddion ond yn fenyw:
+
+\begin{minted}[bgcolor=green!7]{r}
+unname(round(predict(object = atchweliad,
+                     newdata = data.frame(Uchder = 160,
+                                          Pwysau = 92, 
+                                          MaintGwasg = 34, 
+                                          Oed = 20, 
+                                          Rhyw = "Benyw"), 
+                     type = "response"),
+             digits = 0))
+
+1
+\end{minted}
+
+Gwelwn fod gyda diabetes.
+
+\section{Tiwtorial yn Python}
+
+Ar gyfer cynhyrchu atchweliad logistaidd yn python mae rhaid i ni ddefnyddio'r pecynnau \mintinline{python}{sklearn} a \mintinline{python}{pandas}. Wnawn lwytho'r pecynnau gan redeg y c\^{o}d yma.
+
+\begin{minted}[bgcolor=cyan!7]{python}
+from sklearn.linear_model import LogisticRegression
+import pandas as pd
+\end{minted}
+
+Nawr mae angen llwytho'r data, wnawn ddefnyddio'r un data wnaethom ddefnyddio i'r tiwtorial yn R. Cewch ei lawrlwytho o .... Mae'n cynnwys 1000 cofnod o fynegiadau ar fesuriadau pobl yn cynnwys uchder, pwysau, maintgwasg, oed, rhyw ag label yn dangos os gan y person diabetes neu ddim.  
+
+\begin{minted}[bgcolor=cyan!7]{python}
+data = pd.read_csv('data_logistic.csv')
+\end{minted}
+
+Gallwn gweld yr data gan rhedeg:
+
+\begin{minted}[bgcolor=cyan!7]{python}
+data.head()
+\end{minted}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{../img/data_diabetes_python.jpg}
+\end{center}
+\end{figure}
+
+Gan fod ein data gyda rhyw wedi cael ei diffinio gyda'r geiriau "Gwryw" a "Benyw", mae python yn cael trafferth yn delio gyda nhw. Felly nawn trawsnewid nhw i newidyn deuaidd (set o $1$ a $0$).
+
+\begin{minted}[bgcolor=cyan!7]{python}
+data['Rhyw'] = data['Rhyw'].apply(lambda x: int(x =='Gwryw'))
+\end{minted}
+
+Nawr fydd rhaid i ni rannu'r data i ddata ymarfer ag data profi.
+
+\begin{minted}[bgcolor=cyan!7]{python}
+ymarfer = data.sample(frac = 0.7)
+profi = data.drop(ymarfer.index)
+\end{minted}
+
+Mae'r wybodaeth rydym angen i greu model logistaidd angen fod yn fatrics yn python, felly:
+
+\begin{minted}[bgcolor=cyan!7]{python}
+X = ymarfer[['Uchder', 'Pwysau', 'MaintGwasg', 'Oed', 'Rhyw']].as_matrix()
+y = ymarfer['Diabetes'].as_matrix()
+X_profi = profi[['Uchder', 'Pwysau', 'MaintGwasg', 'Oed', 'Rhyw']].as_matrix()
+y_profi = profi['Diabetes'].as_matrix()
+\end{minted}
+
+I redeg yr atchweliad logistaidd wnawn ddefnyddio'r ffwythiant yn \mintinline{python}{sklearn}. Wnawn wneud gan redeg y c\^{o}d canlynol:
+
+\begin{minted}[bgcolor=cyan!7]{python}
+clf = LogisticRegression(random_state=0).fit(X, y)
+\end{minted}
+
+Gallwn edrych ar y rhyngdoriad gan
+
+\begin{minted}[bgcolor=cyan!7]{python}
+clf.intercept_
+\end{minted}
+
+\verbatiminput{allbwn_p2.txt}
+
+ac yna y paramedrau eraill:
+
+\begin{minted}[bgcolor=cyan!7]{python}
+clf.coef_
+\end{minted}
+
+\verbatiminput{allbwn_p1.txt}
+
+Felly dyma yw ein model i dri lle degol:
+
+$$ P(\mathbf{x}) = \frac{1}{1 + e^{-1.709 + 0.124 x_{Uchder} + 0.147 x_{Pwysau} - 0.047 x_{Oed} + 4.808 x_{Rhyw} - 0.130 x_{MaintGwasg}}} $$
+
+Nawr gallwn ni cyfrifo'r gyfradd llwyddiant o ein model ar y data profi. Gallwn ei chyfrifo yn y ffordd ganlynol oherwydd ein bod yn delio gyda data deuaidd.
+
+\begin{minted}[bgcolor=cyan!7]{python}
+1-(sum((clf.predict(X_profi)-y_profi)**2)/len(y_profi))
+
+0.91666666666666663
+\end{minted}
+
+Felly mae ein model logistaidd yn python yn rhoi cyfradd llwyddiant o tua $92\%$. Gallwn nawr ei ddefnyddio ar gyfer rhyw berson t\^{y} allan i ein data. Os oes gennym wryw gyda thaldra o 171, pwysau o 130 a maint gwasg ag oed o 40; gallwn ragfynegi os oes gan y person diabetes ta ddim. 
+
+\begin{minted}[bgcolor=cyan!7]{python}
+clf.predict([[171, 130, 40, 40,1]])
+\end{minted}
+
+\verbatiminput{allbwn_p3.txt}
+
+Gwelwn fod gan y person hwn diabetes yn \^{o}l y model logistaidd rydym wedi'i greu. Nawr nawn drio gyda person tebyg ond gyda phwysau o 90 nlle.
+
+\begin{minted}[bgcolor=cyan!7]{python}
+clf.predict([[171, 90, 40, 40,1]])
+\end{minted}
+
+\verbatiminput{allbwn_p4.txt}
+
+Gwelwn fod does gan y person yma diabetes.

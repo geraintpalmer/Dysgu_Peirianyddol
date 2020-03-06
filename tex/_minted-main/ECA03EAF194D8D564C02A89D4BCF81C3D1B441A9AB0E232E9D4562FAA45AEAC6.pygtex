@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+atchweliad \PYG{o}{\PYGZlt{}\PYGZhy{}} glm\PYG{p}{(}Diabetes \PYG{o}{\PYGZti{}} Uchder \PYG{o}{+} Pwysau \PYG{o}{+} Oed \PYG{o}{+} Rhyw \PYG{o}{+} MaintGwasg\PYG{p}{,}
+                  family \PYG{o}{=} binomial\PYG{p}{,}
+                  data \PYG{o}{=} ymarfer\PYG{p}{)}
+\end{Verbatim}

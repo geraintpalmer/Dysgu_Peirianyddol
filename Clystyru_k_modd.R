@@ -41,15 +41,14 @@ View(heightvsweight)
 
 #Darn gweledol o clystyru k-cymedr
 
-heightvsweight <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
-attach(heightvsweight)
+uchderpwysau <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
+attach(uchderpwysau)
 plot(Uchder, Pwysau )
 xclwstwr <- runif(n = 3, min = min(Uchder), max = max(Uchder))
 yclwstwr <- runif(n = 3, min = min(Pwysau), max = max(Pwysau))
 clystyrau <- matrix(data = c(xclwstwr, yclwstwr), nrow = 3, ncol = 2)
 points(x = xclwstwr, y = yclwstwr, pch = 20, col = c("red","yellow", "Blue"), cex = 2)
 clystyrau
-pointdistance
 
 cychwynol <- sample(x = c(1,2,3), size = 175, replace = TRUE)
 plot(Uchder, Pwysau, pch=20, col = c("red","yellow", "Blue")[unclass(cychwynol)])
@@ -57,21 +56,21 @@ plot(Uchder, Pwysau, pch=20, col = c("red","yellow", "Blue")[unclass(cychwynol)]
 q1 <- c(0,0)
 for (i in which(cychwynol %in% 1))
 {
-  q1 <- q1 + heightvsweight[i,]
+  q1 <- q1 + uchderpwysau[i,]
 }
 q1 <- q1/length(which(cychwynol %in% 1))
 
 q2 <- c(0,0)
 for (i in which(cychwynol %in% 2))
 {
-  q2 <- q2 + heightvsweight[i,]
+  q2 <- q2 + uchderpwysau[i,]
 }
 q2 <- q2/length(which(cychwynol %in% 2))
 
 q3 <- c(0,0)
 for (i in which(cychwynol %in% 3))
 {
-  q3 <- q3 + heightvsweight[i,]
+  q3 <- q3 + uchderpwysau[i,]
 }
 q3 <- q3/length(which(cychwynol %in% 3))
 plot(Uchder, Pwysau)
@@ -81,15 +80,15 @@ z2 <- c()
 z3 <- c()
 for (i in 1:175)
 {
-  z1 <- c(z1, distance(q1, heightvsweight[i,]) )
+  z1 <- c(z1, distance(q1, uchderpwysau[i,]) )
 }
 for (i in 1:175)
 {
-  z2 <- c(z2, distance(q2, heightvsweight[i,]) )
+  z2 <- c(z2, distance(q2, uchderpwysau[i,]) )
 }
 for (i in 1:175)
 {
-  z3 <- c(z3, distance(q3, heightvsweight[i,]) )
+  z3 <- c(z3, distance(q3, uchderpwysau[i,]) )
 }
 distance <- function(x,y)
 {
@@ -121,21 +120,21 @@ clwstwrn
 q1 <- c(0,0)
 for (i in which(clwstwrn %in% 1))
 {
-  q1 <- q1 + heightvsweight[i,]
+  q1 <- q1 + uchderpwysau[i,]
 }
 q1 <- q1/length(which(clwstwrn %in% 1))
 
 q2 <- c(0,0)
 for (i in which(clwstwrn %in% 2))
 {
-  q2 <- q2 + heightvsweight[i,]
+  q2 <- q2 + uchderpwysau[i,]
 }
 q2 <- q2/length(which(clwstwrn %in% 2))
 
 q3 <- c(0,0)
 for (i in which(clwstwrn %in% 3))
 {
-  q3 <- q3 + heightvsweight[i,]
+  q3 <- q3 + uchderpwysau[i,]
 }
 q3 <- q3/length(which(clwstwrn %in% 3))
 
@@ -162,11 +161,11 @@ lines(matrix(c(cyntaf[3,],ail[3,],trydydd[3,],pedwerydd[3,],pumed[3,],chweched[3
 
 #Elbow method
 elb <- c()
-ktest <- kmeans(x = heightvsweight, centers = 1, nstart = 50)$tot.withinss
+ktest <- kmeans(x = uchderpwysau, centers = 1, nstart = 50)$tot.withinss
 ktest
 for (i in 1:12)
 {
-  elb <- c(elb, kmeans(x = heightvsweight, centers = i, nstart = 50)$tot.withinss)
+  elb <- c(elb, kmeans(x = uchderpwysau, centers = i, nstart = 50)$tot.withinss)
 }
 elb
 plot(x = 1:12, y = elb, main = "Ffurf Penelin o ddarganfod K", xlab = "Nifer o Clystyrau", ylab = "Swm Sgwariau o fewn Clystyrau")
@@ -174,7 +173,7 @@ lines(x = elb)
 
 #Dendrogram
 
-UchderPwysau <- dist(heightvsweight, method="euclidean")
+UchderPwysau <- dist(uchderpwysau, method="euclidean")
 ( dend <- hclust(UchderPwysau, method = "complete") )
 dend <- as.dendrogram(dend)
 plot(dend, ylab = "Annhebygrwydd", main = "Dendrogram am nifer o Clystyrau")

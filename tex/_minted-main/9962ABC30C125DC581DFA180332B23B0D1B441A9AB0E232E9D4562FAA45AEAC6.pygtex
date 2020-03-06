@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+rhifau \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{k+kt}{c}\PYG{p}{(}\PYG{l+m}{1}\PYG{o}{:}\PYG{l+m}{1000}\PYG{p}{)}
+rhifauymarfer \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{k+kp}{sample}\PYG{p}{(}x \PYG{o}{=} rhifau\PYG{p}{,} size \PYG{o}{=} \PYG{l+m}{700}\PYG{p}{,} replace \PYG{o}{=} \PYG{k+kc}{FALSE}\PYG{p}{)}
+rhifauprofi \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{k+kp}{setdiff}\PYG{p}{(}rhifau\PYG{p}{,} rhifauymarfer\PYG{p}{)}
+\end{Verbatim}

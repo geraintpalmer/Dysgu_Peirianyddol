@@ -1,0 +1,4 @@
+ (Intercept)       Uchder       Pwysau          Oed 
+22.858432583 -0.254347133  0.215272873  0.057360113 
+   RhywGwryw   MaintGwasg 
+-8.074052403 -0.003206262 

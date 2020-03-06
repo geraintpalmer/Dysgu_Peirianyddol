@@ -34,10 +34,12 @@ Mae clystyru $k$-cymedr yn syml, mae ond yn dilyn pedwar cam \cite{K-means-clust
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../img/Cam1.jpeg}
+\label{fig:Enghraifft_o_set_cychwynol}
+\caption{Enghraifft o set cychwynol ar gyfer clystyru.}
 \end{center}
 \end{figure}
 
-\item Cyfrifo canolbwynt (hynny yw cymedr) pob clwstwr.
+\item Cyfrifo canolbwynt (hynny yw craidd) pob clwstwr.
 
 \begin{figure}[H]
 \begin{center}
@@ -45,7 +47,7 @@ Mae clystyru $k$-cymedr yn syml, mae ond yn dilyn pedwar cam \cite{K-means-clust
 \end{center}
 \end{figure}
 
-\item Ail-aseinio pob elfen unwaith eto i'r clwstwr gyda chymedr agosaf.
+\item Ail-aseinio pob elfen unwaith eto i'r clwstwr gyda craidd agosaf.
 
 \begin{figure}[H]
 \begin{center}
@@ -53,7 +55,7 @@ Mae clystyru $k$-cymedr yn syml, mae ond yn dilyn pedwar cam \cite{K-means-clust
 \end{center}
 \end{figure}
 
-\item Ailadrodd camau dau a tri tan fod y canolbwyntiau ddim yn symud rhagor.
+\item Ailadrodd camau dau a tri tan fod y creiddiau ddim yn symud rhagor.
 
 \begin{figure}[H]
 \begin{center}
@@ -63,27 +65,25 @@ Mae clystyru $k$-cymedr yn syml, mae ond yn dilyn pedwar cam \cite{K-means-clust
 
 \end{enumerate}  
 
-\subsection{Darn Mathemategol} % Angen teitl gwell
+\subsection{Yr Algorithm}
 
-Diffiniwn bob clwstwr rydym yn ceisio darganfod fel $C_i$ lle bydd $i \in \{ 1, 2, \dots, k\}$, mae gennym hefyd $n$ pwyntiau data $x_1, x_2, \dots, x_n$. Gadewch i $c_i$ bod yn bwynt sy'n ganolbwynt y clwstwr $C_i$. Ar gyfer y cam cyntaf angen aseinio pob $x_j$ i ryw glwstwr $C_i$ ar hap. Yna gan ein bod yn datgelu ein bod yn delio gyda phl\^{a}n Ewclidaidd, mi fyddem yn darganfod cymedr pob clwstwr gan y fformiwla ganlynol:
+Diffiniwn bob clwstwr rydym yn ceisio darganfod fel $C_i$ lle bydd $i \in \{ 1, 2, \dots, k\}$, mae gennym hefyd $n$ pwyntiau data $x_1, x_2, \dots, x_n$. Gadewch i $\mathbf{c}_i$ bod yn bwynt sy'n graidd i clwstwr $C_i$. Ar gyfer y cam cyntaf angen aseinio pob $\mathbf{x}_j$ i ryw glwstwr $C_i$ ar hap. Yna gan ein bod yn datgelu ein bod yn delio gyda phl\^{a}n Ewclidaidd, mi fyddem yn darganfod craidd pob clwstwr gan y fformiwla ganlynol:
 
 \begin{equation}
-C_i = \frac{1}{|S_i|}\sum_{x_j \in S_i} {x_j}
+\mathbf{c}_i = \frac{1}{|S_i|}\sum_{\mathbf{x}_j \in S_i} {\mathbf{x}_j}
 \end{equation}
 
-% dyw'r hafaliad hyn ddim yn gwneud synwyr. Ble mae'r $c_i$ y canolbwynt sydd angen. A sut ydych yn symio bwyntiau? Angen mwy o esboniad.
+Yn y fformiwla uchod, gwelwn fod fectorau yn cael eu symio. Fyddem yn gwneud hyn gan symio dros elfennau. \footnote{$ (x_1,x_2,\dots,x_n) + (y_1,y_2,\dots,y_n) = (x_1 + y_1, x_2 + y_2,\dots,x_n + y_n)$}
 
 lle diffiniwn $S_i$ fel y set o bwyntiau data sydd wedi'i aseinio i glwstwr $C_i$.
 
-Nawr mae gan bob clwstwr cymedr newydd, fedrwn aseinio pob pwynt data i'r canolbwynt agosaf. Caiff hyn ei gwneud gan fynd drwy bob pwynt data a chyfrifo'r pellter Ewclidaidd i bob canolbwynt. Yna fydd y pwynt priodol yn cael ei labelu gyda'r clwstwr sydd a'r pellter lleiaf o'i chanolbwynt i'r pwynt data. Hynny yw
+Nawr mae gan bob clwstwr craidd newydd, fedrwn aseinio pob pwynt data i'r craidd agosaf. Caiff hyn ei gwneud gan fynd drwy bob pwynt data a chyfrifo'r pellter Ewclidaidd \footnote{$|| \mathbf{p} - \mathbf{q} || = \sqrt{(p_1-q_1)^2+(p_2-q_2)^2+\dots+(p_n-q_n)^2}$} i bob canolbwynt. Yna fydd y pwynt priodol yn cael ei labelu gyda'r clwstwr sydd a'r pellter lleiaf o'i graidd i'r pwynt data. Hynny yw
 
 \begin{equation}
-\arg \min_{c_i} dist(c_i, x_j)^2
+\arg \min_{\mathbf{c}_i} ||\mathbf{c}_i, \mathbf{x}_j||^2
 \end{equation}
 
-Unwaith mae'r proses wedi'i chychwyn, angen ailadrodd y darn o ddarganfod y creiddiau newydd ac yna ail labelu'r pwyntiau data.
-
-% Mae hwn yn swnio fel ond unwaith chi'n ailadrodd y proses. Pryd mae'n gorffen?
+Unwaith mae'r proses wedi'i chychwyn, angen ailadrodd y darn o ddarganfod y creiddiau newydd ac ail labelu'r pwyntiau data tan fod y creiddiau ddim yn symyd rhagor.
 
 \subsection{Sut i ddarganfod y $k$ orau?}
 
@@ -91,16 +91,18 @@ Mae yna wahanol ffurf i ddarganfod $k$, edrychwn ar ddau wahanol ffordd o wneud 
 
 \subsubsection{Dull Penelin}
 
-Mae'r dull penelin yn cymharu'r cyfanswm o swm sgwariau o fewn y clystyrau. Unwaith gennym y cyfanswm o swm sgwariau o fewn clystyrau i bob $k$ rydym eisiau cymharu, fyddem yn creu plot o bob $k$ yn erbyn y cyfanswm o swm sgwariau o fewn y clystyrau ar gyfer y $k$ hynny. Unwaith mae gennym y graff, allwn ei ddadansoddi. 
+Mae'r dull penelin yn cymharu'r cyfanswm o swm sgwariau o fewn y clystyrau. Unwaith gennym y cyfanswm o swm sgwariau o fewn clystyrau i bob $k$ rydym eisiau cymharu, fyddem yn creu plot o bob $k$ yn erbyn y cyfanswm o swm sgwariau o fewn y clystyrau ar gyfer y $k$ hynny. Fydd swm sgwariau ar gyfer clwstwr $C_{i}$ yn cael ei darganfod gan symio y pellter rhwng y craidd $\mathbf{c}_i$ a phob $\mathbf{x}_j$ yn ei tro ag yno ei sgwario fel welwn yn y fformiwla:
 
-% Angen esbonio beth yw swm sgwariau. Oes hafaliad ar ei cyfer?
+$$ SS_{i} = \sum_{j=1}^{n} (\mathbf{x}_{j}-\mathbf{c}_i)^{2} $$
+
+Unwaith mae gennym y graff, allwn ei ddadansoddi. 
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{../img/Dull_Penelin.jpeg}
-\end{center}
 \caption{Enghraifft o blot o $k$ yn erbyn y cyfanswm swm o sgwariau}
 \label{fig:dullpenelin}
+\end{center}
 \end{figure}
 
 Yn y graff yn Narlun~\ref{fig:dullpenelin}, gwelwn fod swm sgwariau yn fawr yn cychwyn gyda $k$=1 sydd yn gwneud synnwyr. % Pam?
@@ -123,7 +125,7 @@ I ddadansoddi'r dendrogram mi fyddwn edrych yn bennaf ar yr echelin fertigol. Ed
 \section{Tiwtorial yn R}
 Mi fyddwn yn edrych ar ddata o uchder a phwysau 175 wahanol berson. Mi allwch chi lawrlwytho y data yma o fan hyn. % Cofia ychwanegu'r link
 
-Yno fydd angen lawrlwytho a gosod y pecynnau \mintinline{R}{graphics}, \mintinline{R}{stats} ag \mintinline{R}{datasets} ar eich fersiwn chi o RStudio. Ffordd hawdd i wirio hyn fydd i ddefnyddio'r c\^{o}d canlynol: % Allwn ni neud hwn yn platfform agnostig - h.y. paid sôn am RStudtio, just y cod R. Yna gall unrhywun dilyn rhain lle bynnag mae'n nhw'n rhedeg eu R.
+Yno fydd angen lawrlwytho a gosod y pecynnau \mintinline{R}{graphics}, \mintinline{R}{stats} ag \mintinline{R}{datasets} ar eich cyfrifiadur. Ffordd hawdd i wirio hyn fydd i ddefnyddio'r c\^{o}d canlynol: 
 
 \begin{minted}[bgcolor=green!7]{r}
 install.packages("graphics")
@@ -134,18 +136,17 @@ library(stats)
 library(datasets)
 \end{minted}
 
-Mae'r darn gyntaf o'r c\^{o}d uchod yn gosod/diweddaru'r pecynnau angenrheidiol. Mae'r ail ddarn yn llwytho'r pecynnau i ein fersiwn ni o RStudio.
+Mae'r darn gyntaf o'r c\^{o}d uchod yn gosod/diweddaru'r pecynnau angenrheidiol. Mae'r ail ddarn yn llwytho'r pecynnau i ein sesiwn ni.
 
 Nawr mi wnawn lwytho'r data.
 
 \begin{minted}[bgcolor=green!7]{r}
-heightvsweight <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
-View(heightvsweight)
+uchderpwysau <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
+View(uchderpwysau)
 \end{minted}
 
-% Gawn ni cael variable names Cymraeg? uchderpwysau?
 Mae'r string sydd mewnbwn y ffwythiant \mintinline{R}{read.csv} yn cyfeirio at y lleoliad ar ein cyfrifiadur lle gallwn ganfod y ffeil csv priodol. Rhaid gwneud yn si\^{w}r eich bod yn defnyddio'r lleoliad cywir i'r lleoliad o'ch ffeil chi.
-Ar \^{o}l rhedeg y c\^{o}d ddylai eich data edrych yn debyg i'r canlynol: % Cael gwared a'r RStudio reference
+Ar \^{o}l rhedeg y c\^{o}d ddylai eich data edrych yn debyg i'r canlynol: 
 
 \begin{figure}[H]
 \begin{center}
@@ -157,7 +158,7 @@ Ar \^{o}l rhedeg y c\^{o}d ddylai eich data edrych yn debyg i'r canlynol: % Cael
 Gan fod y data hefo enwau ar gyfer y colofnau, gallwn atodi'r data i lwybr chwilio R. Bydd hyn yn gadael i ni gyfeirio at enwau colofnau'r data yn ein c\^{o}d fydd yn gwneud yn lawer mwy symlach i ddeall.
 
 \begin{minted}[bgcolor=green!7]{r}
-attach(heightvsweight)
+attach(uchderpwysau)
 \end{minted}
 
 I wneud fwy o synnwyr o'r data, mi wnawn blotio'r data.
@@ -177,23 +178,22 @@ Sy'n rhoi:
 
 Gwelwn fod yna 3 clwstwr clir. 
 
-R\^{w}an rydym yn gallu tybio fod y data yn gallu cael i rannu i dri chlwstwr gwahanol, mi wnawn ddefnyddio'r algorithm dysgu peirianyddol i'w ddehongli. Rhedwn y canlynol i redeg clystyru $k$-cymedr yn R. Rydym yn defnyddio'r ymresymiad \mintinline{R}{nstart} i ddewis faint o setiau ar hap o greiddiau wnawn gymered.
-% Dydw i ddim yn deall nstart sori. Angen gwell esboniad.
+R\^{w}an rydym yn gallu tybio fod y data yn gallu cael i rannu i dri chlwstwr gwahanol, mi wnawn ddefnyddio'r algorithm dysgu peirianyddol i'w ddehongli. Rhedwn y canlynol i redeg clystyru $k$-cymedr yn R. Rydym yn defnyddio'r ymresymiad \mintinline{R}{nstart} i ddewis faint o setiau ar hap o ddata wedi'i labelu wnawn gymered. Welwn enghraifft o'r set ar hap hyn yn Darlun~\ref{fig:Enghraifft_o_set_cychwynol}. Rydym yn neud hyn i wneud yn fwy debygol i ni ddarganfod yr uchafbwynt eang, mae hyn oherwydd mae yna gymaint o uchafbwyntiau lleol.
 
 \begin{minted}[bgcolor=green!7]{r}
-kcymedr <- kmeans(heightvsweight,3, nstart = 50)
+kcymedr <- kmeans(uchderpwysau,3, nstart = 50)
 \end{minted}
 
 Allwn nawr adio colofn newydd i'r data sef y clystyrau newydd mae'r algorithm wedi'i darganfod.
 
 \begin{minted}[bgcolor=green!7]{r}
-heightvsweight$Clwstwr3 <- kcymedr$cluster
+uchderpwysau$Clwstwr3 <- kcymedr$cluster
 \end{minted}
 
 Gallwn weld y newid hwn gan ddefnyddio'r un c\^{o}d a ddefnyddion yn gynharach.
 
 \begin{minted}[bgcolor=green!7]{r}
-View(heightvsweight)
+View(uchderpwysau)
 \end{minted}
 
 \begin{figure}[H]
@@ -221,9 +221,9 @@ Sy'n rhoi:
 I gymharu, nawr mi nawn rhedeg yr algorithm ar gyfer 6 clwstwr i weld y clystyrau pan fydd $k=6$. 
 
 \begin{minted}[bgcolor=green!7]{r}
-kcymedr <- kmeans(heightvsweight,6, nstart = 50)
-heightvsweight$Clwstwr6 <- kcymedr$cluster
-View(heightvsweight)
+kcymedr <- kmeans(uchderpwysau,6, nstart = 50)
+uchderpwysau$Clwstwr6 <- kcymedr$cluster
+View(uchderpwysau)
 \end{minted}
 
 \begin{figure}[H]
@@ -321,7 +321,7 @@ data.head()
 \label{fig:Data1}
 \end{figure}
 
-I weld y data mewn ffordd fwy gweledol, wnawn blotio graff gwasgariad o'r data
+I weld y data mewn ffordd fwy gweledol, wnawn blotio graff gwasgariad o'r data.
 
 \begin{minted}[bgcolor=cyan!7]{python}
 plt.scatter(data['Uchder'], data['Pwysau']);

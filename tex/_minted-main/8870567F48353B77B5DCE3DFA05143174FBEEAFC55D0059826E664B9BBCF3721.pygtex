@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{X} \PYG{o}{=} \PYG{n}{ymarfer}\PYG{p}{[[}\PYG{l+s+s1}{\PYGZsq{}Uchder\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Pwysau\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}MaintGwasg\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Oed\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Rhyw\PYGZsq{}}\PYG{p}{]]}\PYG{o}{.}\PYG{n}{as\PYGZus{}matrix}\PYG{p}{()}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{ymarfer}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Diabetes\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{as\PYGZus{}matrix}\PYG{p}{()}
+\PYG{n}{X\PYGZus{}profi} \PYG{o}{=} \PYG{n}{profi}\PYG{p}{[[}\PYG{l+s+s1}{\PYGZsq{}Uchder\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Pwysau\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}MaintGwasg\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Oed\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Rhyw\PYGZsq{}}\PYG{p}{]]}\PYG{o}{.}\PYG{n}{as\PYGZus{}matrix}\PYG{p}{()}
+\PYG{n}{y\PYGZus{}profi} \PYG{o}{=} \PYG{n}{profi}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Diabetes\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{as\PYGZus{}matrix}\PYG{p}{()}
+\end{Verbatim}
