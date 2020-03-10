@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{kcymedr} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{kmeans}\PYG{p}{(}\PYG{n}{uchderpwysau}\PYG{p}{,}\PYG{l+m}{6}\PYG{p}{,} \PYG{n}{nstart} \PYG{o}{=} \PYG{l+m}{50}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{uchderpwysau}\PYG{o}{\PYGZdl{}}\PYG{n}{Clwstwr6} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{kcymedr}\PYG{o}{\PYGZdl{}}\PYG{n}{cluster}
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{View}\PYG{p}{(}\PYG{n}{uchderpwysau}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{atchweliad} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{glm}\PYG{p}{(}\PYG{n}{Diabetes} \PYG{o}{\PYGZti{}} \PYG{n}{Uchder} \PYG{o}{+} \PYG{n}{Pwysau} \PYG{o}{+} \PYG{n}{Oed} \PYG{o}{+} \PYG{n}{Rhyw} \PYG{o}{+} \PYG{n}{MaintGwasg}\PYG{p}{,}
+\PYG{o}{+}                   \PYG{n}{family} \PYG{o}{=} \PYG{n}{binomial}\PYG{p}{,}
+\PYG{o}{+}                   \PYG{n}{data} \PYG{o}{=} \PYG{n}{ymarfer}\PYG{p}{)}
+\end{Verbatim}

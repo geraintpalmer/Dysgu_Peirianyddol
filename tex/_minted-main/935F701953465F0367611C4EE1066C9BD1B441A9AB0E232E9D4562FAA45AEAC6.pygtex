@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{unname}\PYG{p}{(}\PYG{n+nf}{round}\PYG{p}{(}\PYG{n+nf}{predict}\PYG{p}{(}\PYG{n}{object} \PYG{o}{=} \PYG{n}{atchweliad}\PYG{p}{,}
+\PYG{o}{+}                      \PYG{n}{newdata} \PYG{o}{=} \PYG{n+nf}{data.frame}\PYG{p}{(}\PYG{n}{Uchder} \PYG{o}{=} \PYG{l+m}{160}\PYG{p}{,}
+\PYG{o}{+}                                           \PYG{n}{Pwysau} \PYG{o}{=} \PYG{l+m}{92}\PYG{p}{,}
+\PYG{o}{+}                                           \PYG{n}{MaintGwasg} \PYG{o}{=} \PYG{l+m}{34}\PYG{p}{,}
+\PYG{o}{+}                                           \PYG{n}{Oed} \PYG{o}{=} \PYG{l+m}{20}\PYG{p}{,}
+\PYG{o}{+}                                           \PYG{n}{Rhyw} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}Gwryw\PYGZdq{}}\PYG{p}{),}
+\PYG{o}{+}                      \PYG{n}{type} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}response\PYGZdq{}}\PYG{p}{),}
+\PYG{o}{+}              \PYG{n}{digits} \PYG{o}{=} \PYG{l+m}{0}\PYG{p}{))}
+\PYG{o}{+}
+\PYG{l+m}{0}
+\end{Verbatim}

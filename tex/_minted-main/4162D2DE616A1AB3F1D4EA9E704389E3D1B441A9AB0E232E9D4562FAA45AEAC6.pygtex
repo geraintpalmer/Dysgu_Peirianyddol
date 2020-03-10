@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{canlyniad} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{predict}\PYG{p}{(}\PYG{n}{object} \PYG{o}{=} \PYG{n}{atchweliad}\PYG{p}{,} \PYG{n}{newdata} \PYG{o}{=} \PYG{n}{profi}\PYG{p}{,} \PYG{n}{type} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}response\PYGZdq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{canlyniad} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{round}\PYG{p}{(}\PYG{n}{canlyniad}\PYG{p}{,} \PYG{n}{digits} \PYG{o}{=} \PYG{l+m}{0}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{canlyniad} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{unname}\PYG{p}{(}\PYG{n}{canlyniad}\PYG{p}{)}
+\end{Verbatim}

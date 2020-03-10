@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Rhyw\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Rhyw\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{apply}\PYG{p}{(}\PYG{k}{lambda} \PYG{n}{x}\PYG{p}{:} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{x} \PYG{o}{==}\PYG{l+s+s1}{\PYGZsq{}Gwryw\PYGZsq{}}\PYG{p}{))}
-\end{Verbatim}

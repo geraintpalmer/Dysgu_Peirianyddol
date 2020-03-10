@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{plot}\PYG{p}{(}\PYG{n}{Uchder}\PYG{p}{,} \PYG{n}{Pwysau}\PYG{p}{,} \PYG{n}{pch} \PYG{o}{=} \PYG{l+m}{21}\PYG{p}{,} \PYG{n}{bg}\PYG{o}{=}\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}red\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}green\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}blue\PYGZdq{}}\PYG{p}{)}\PYG{n+nf}{[unclass}\PYG{p}{(}\PYG{n}{kcymedr}\PYG{o}{\PYGZdl{}}\PYG{n}{cluster}\PYG{p}{)}\PYG{n}{]}\PYG{p}{)}
+\end{Verbatim}

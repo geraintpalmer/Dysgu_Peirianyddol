@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{data} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{read.csv}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}C:/Users/User/Desktop/Dysgu\PYGZus{}Peirianyddol/data\PYGZus{}logistic.csv\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

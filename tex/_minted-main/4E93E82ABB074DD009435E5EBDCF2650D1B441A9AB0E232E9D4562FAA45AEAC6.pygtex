@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n}{rhifau} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{1}\PYG{o}{:}\PYG{l+m}{1000}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{rhifauymarfer} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{sample}\PYG{p}{(}\PYG{n}{x} \PYG{o}{=} \PYG{n}{rhifau}\PYG{p}{,} \PYG{n}{size} \PYG{o}{=} \PYG{l+m}{700}\PYG{p}{,} \PYG{n}{replace} \PYG{o}{=} \PYG{k+kc}{FALSE}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n}{rhifauprofi} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{setdiff}\PYG{p}{(}\PYG{n}{rhifau}\PYG{p}{,} \PYG{n}{rhifauymarfer}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{install.packages}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}stats\PYGZdq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} \PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{stats}\PYG{p}{)}
+\end{Verbatim}

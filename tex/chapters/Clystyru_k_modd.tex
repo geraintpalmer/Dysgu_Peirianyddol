@@ -128,12 +128,12 @@ Mi fyddwn yn edrych ar ddata o uchder a phwysau 175 wahanol berson. Mi allwch ch
 Yno fydd angen lawrlwytho a gosod y pecynnau \mintinline{R}{graphics}, \mintinline{R}{stats} ag \mintinline{R}{datasets} ar eich cyfrifiadur. Ffordd hawdd i wirio hyn fydd i ddefnyddio'r c\^{o}d canlynol: 
 
 \begin{minted}[bgcolor=green!7]{r}
-install.packages("graphics")
-install.packages("stats")
-install.packages("datasets")
-library(graphics)
-library(stats)
-library(datasets)
+> install.packages("graphics")
+> install.packages("stats")
+> install.packages("datasets")
+> library(graphics)
+> library(stats)
+> library(datasets)
 \end{minted}
 
 Mae'r darn gyntaf o'r c\^{o}d uchod yn gosod/diweddaru'r pecynnau angenrheidiol. Mae'r ail ddarn yn llwytho'r pecynnau i ein sesiwn ni.
@@ -141,8 +141,8 @@ Mae'r darn gyntaf o'r c\^{o}d uchod yn gosod/diweddaru'r pecynnau angenrheidiol.
 Nawr mi wnawn lwytho'r data.
 
 \begin{minted}[bgcolor=green!7]{r}
-uchderpwysau <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
-View(uchderpwysau)
+> uchderpwysau <- read.csv("C:/Users/User/Desktop/Dysgu_Peirianyddol/heightvsweight.csv")
+> View(uchderpwysau)
 \end{minted}
 
 Mae'r string sydd mewnbwn y ffwythiant \mintinline{R}{read.csv} yn cyfeirio at y lleoliad ar ein cyfrifiadur lle gallwn ganfod y ffeil csv priodol. Rhaid gwneud yn si\^{w}r eich bod yn defnyddio'r lleoliad cywir i'r lleoliad o'ch ffeil chi.
@@ -158,13 +158,13 @@ Ar \^{o}l rhedeg y c\^{o}d ddylai eich data edrych yn debyg i'r canlynol:
 Gan fod y data hefo enwau ar gyfer y colofnau, gallwn atodi'r data i lwybr chwilio R. Bydd hyn yn gadael i ni gyfeirio at enwau colofnau'r data yn ein c\^{o}d fydd yn gwneud yn lawer mwy symlach i ddeall.
 
 \begin{minted}[bgcolor=green!7]{r}
-attach(uchderpwysau)
+> attach(uchderpwysau)
 \end{minted}
 
 I wneud fwy o synnwyr o'r data, mi wnawn blotio'r data.
 
 \begin{minted}[bgcolor=green!7]{r}
-plot(Uchder, Pwysau, pch = 21)
+> plot(Uchder, Pwysau, pch = 21)
 \end{minted}
 
 Sy'n rhoi:
@@ -181,19 +181,19 @@ Gwelwn fod yna 3 clwstwr clir.
 R\^{w}an rydym yn gallu tybio fod y data yn gallu cael i rannu i dri chlwstwr gwahanol, mi wnawn ddefnyddio'r algorithm dysgu peirianyddol i'w ddehongli. Rhedwn y canlynol i redeg clystyru $k$-cymedr yn R. Rydym yn defnyddio'r ymresymiad \mintinline{R}{nstart} i ddewis faint o setiau ar hap o ddata wedi'i labelu wnawn gymered. Welwn enghraifft o'r set ar hap hyn yn Darlun~\ref{fig:Enghraifft_o_set_cychwynol}. Rydym yn neud hyn i wneud yn fwy debygol i ni ddarganfod yr uchafbwynt eang, mae hyn oherwydd mae yna gymaint o uchafbwyntiau lleol.
 
 \begin{minted}[bgcolor=green!7]{r}
-kcymedr <- kmeans(uchderpwysau,3, nstart = 50)
+> kcymedr <- kmeans(uchderpwysau,3, nstart = 50)
 \end{minted}
 
 Allwn nawr adio colofn newydd i'r data sef y clystyrau newydd mae'r algorithm wedi'i darganfod.
 
 \begin{minted}[bgcolor=green!7]{r}
-uchderpwysau$Clwstwr3 <- kcymedr$cluster
+> uchderpwysau$Clwstwr3 <- kcymedr$cluster
 \end{minted}
 
 Gallwn weld y newid hwn gan ddefnyddio'r un c\^{o}d a ddefnyddion yn gynharach.
 
 \begin{minted}[bgcolor=green!7]{r}
-View(uchderpwysau)
+> View(uchderpwysau)
 \end{minted}
 
 \begin{figure}[H]
@@ -207,7 +207,7 @@ Mae'n bosib fydd yr algorithm wedi labeli'r clystyrau gwahanol gyda rhifau gwaha
 Rhedwn y c\^{o}d canlynol liwio'r clystyrau newydd ar graff.
 
 \begin{minted}[bgcolor=green!7]{r}
-plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue")[unclass(kcymedr$cluster)])
+> plot(Uchder, Pwysau, pch = 21, bg=c("red","green","blue")[unclass(kcymedr$cluster)])
 \end{minted}
 
 Sy'n rhoi:
@@ -221,9 +221,9 @@ Sy'n rhoi:
 I gymharu, nawr mi nawn rhedeg yr algorithm ar gyfer 6 clwstwr i weld y clystyrau pan fydd $k=6$. 
 
 \begin{minted}[bgcolor=green!7]{r}
-kcymedr <- kmeans(uchderpwysau,6, nstart = 50)
-uchderpwysau$Clwstwr6 <- kcymedr$cluster
-View(uchderpwysau)
+> kcymedr <- kmeans(uchderpwysau,6, nstart = 50)
+> uchderpwysau$Clwstwr6 <- kcymedr$cluster
+> View(uchderpwysau)
 \end{minted}
 
 \begin{figure}[H]
@@ -235,8 +235,8 @@ View(uchderpwysau)
 Gwelwn fod y labeli newydd wedi cael ei ychwanegu i'n tabl. Yna gan blotio graff arall, fedrem weld y 6 clwstwr yn gliriach.
 
 \begin{minted}[bgcolor=green!7]{r}
-lliwiau <- c("red","green","blue", "yellow", "black", "white")
-plot(Uchder, Pwysau, pch = 21, bg=lliwiau[unclass(kcymedr$cluster)])
+> lliwiau <- c("red","green","blue", "yellow", "black", "white")
+> plot(Uchder, Pwysau, pch = 21, bg=lliwiau[unclass(kcymedr$cluster)])
 \end{minted}
 
 Sy'n rhoi:
@@ -296,15 +296,15 @@ Yn y tiwtorial hwn mi wnawn edrych ar yr un data a welom yn y tiwtorial diwethaf
 I gychwyn bydd rhaid llwytho'r pecynnau \mintinline{python}{pandas}, \mintinline{python}{matplotlib.pyplot} ag \mintinline{python}{sklearn.cluster} drwy redeg y c\^{o}d canlynol:
 
 \begin{minted}[bgcolor=cyan!7]{python}
-import pandas as pd
-import matplotlib.pyplot as plt
-import sklearn.cluster
+>>> import pandas as pd
+>>> import matplotlib.pyplot as plt
+>>> import sklearn.cluster
 \end{minted}
 
 Y r\^{w}an mi wnawn lwytho'r data i mewn i'n gwaith gan redeg y c\^{o}d:
 
 \begin{minted}[bgcolor=cyan!7]{python}
-data = pd.read_csv('heightvsweight.csv')
+>>> data = pd.read_csv('heightvsweight.csv')
 \end{minted}
 
 Mae'r string sydd mewnbwn y ffwythiant \mintinline{R}{pd.read_csv} yn cyfeirio at y lleoliad ar ein cyfrifiadur lle gallwn ganfod y ffeil csv priodol. Rhaid gwneud yn si\^{w}r eich bod yn defnyddio'r lleoliad cywir i'r lleoliad o'ch ffeil chi.
@@ -324,10 +324,10 @@ data.head()
 I weld y data mewn ffordd fwy gweledol, wnawn blotio graff gwasgariad o'r data.
 
 \begin{minted}[bgcolor=cyan!7]{python}
-plt.scatter(data['Uchder'], data['Pwysau']);
-plt.xlabel('Uchder')
-plt.ylabel('Pwysau')
-plt.show()
+>>> plt.scatter(data['Uchder'], data['Pwysau']);
+>>> plt.xlabel('Uchder')
+>>> plt.ylabel('Pwysau')
+>>> plt.show()
 \end{minted}
 
 \begin{figure}[H]
@@ -341,14 +341,14 @@ plt.show()
 Fel gwelwn, mae'r data yn edrych fel ei fod mewn tri chlwstwr. Felly wnawn ddefnyddio'r ffurf algorithm dysgu peirianyddol i'w labelu.
 
 \begin{minted}[bgcolor=cyan!7]{python}
-kmeans = sklearn.cluster.KMeans(n_clusters=3).fit(data)
-data['Cluster (k=3)'] = kmeans.predict(data)
+>>> kmeans = sklearn.cluster.KMeans(n_clusters=3).fit(data)
+>>> data['Cluster (k=3)'] = kmeans.predict(data)
 \end{minted}
 
 Gallwn weld y newid hwn gan ddefnyddio'r un c\^{o}d a ddefnyddion yn gynharach.
 
 \begin{minted}[bgcolor=cyan!7]{python}
-data.head()
+>>> data.head()
 \end{minted}
 
 \begin{figure}[H]
@@ -361,10 +361,10 @@ data.head()
 Fel y gwelwyd, mae'r data wedi'i rhoi i mewn i dri chlwstwr ac wedi'i labelu gyda rhif y clwstwr. Gan fod pob pwynt yn y data nawr gyda label, allwn ni creu'r plot eto ond gyda bob clwstwr yn lliw gwahanol.
 
 \begin{minted}[bgcolor=cyan!7]{python}
-plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=3)']);
-plt.xlabel('Uchder')
-plt.ylabel('Pwysau')
-plt.show()
+>>> plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=3)']);
+>>> plt.xlabel('Uchder')
+>>> plt.ylabel('Pwysau')
+>>> plt.show()
 \end{minted}
 
 Sy'n rhoi:
@@ -380,14 +380,14 @@ Sy'n rhoi:
 Fel y gwelwn, gweithiodd yr algorithm yn wych. Wnawn nawr trio clystyru $k$-cymedr gyda $k$ yn hafal i 6.
 
 \begin{minted}[bgcolor=cyan!7]{python}
-kmeans = sklearn.cluster.KMeans(n_clusters=6).fit(data)
-data['Cluster (k=6)'] = kmeans.predict(data)
+>>> kmeans = sklearn.cluster.KMeans(n_clusters=6).fit(data)
+>>> data['Cluster (k=6)'] = kmeans.predict(data)
 \end{minted}
 
 Sy'n rhoi:
 
 \begin{minted}[bgcolor=cyan!7]{python}
-data.head()
+>>> data.head()
 \end{minted}
 
 \begin{figure}[H]
@@ -400,10 +400,10 @@ data.head()
 Gallwn hefyd gweld canlyniad rhoi'r data i mewn i 6 clwstwr gwahanol: 
 
 \begin{minted}[bgcolor=cyan!7]{python}
-plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=6)']);
-plt.xlabel('Uchder')
-plt.ylabel('Pwysau')
-plt.show()
+>>> plt.scatter(data['Uchder'], data['Pwysau'], c=data['Cluster (k=6)']);
+>>> plt.xlabel('Uchder')
+>>> plt.ylabel('Pwysau')
+>>> plt.show()
 \end{minted}
 
 Sy'n rhoi:
