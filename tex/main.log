@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.31)  10 MAR 2020 14:29
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.31)  24 MAR 2020 13:53
 entering extended mode
 **./main.tex
 (main.tex
@@ -1319,10 +1319,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (chapters/Cyflwyniad.tex
 Pennod 1.
-) [4
+[4
 
 
-] [5]
+]
+Overfull \hbox (610.41512pt too wide) in paragraph at lines 62--88
+ [] 
+ []
+
+[5] [6] [7]) [8]
 \openout2 = `chapters/Clystyru_k_modd.aux'.
 
  (chapters/Clystyru_k_modd.tex
@@ -1347,7 +1352,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 25.
 
-[6
+[9
 
 
 
@@ -1360,7 +1365,7 @@ File: ../img/Cam3.jpeg Graphic file (type bmp)
 <../img/Cam3.jpeg>
 File: ../img/Convergence4.jpeg Graphic file (type bmp)
 <../img/Convergence4.jpeg>
- [7]
+ [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 88.
@@ -1369,12 +1374,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 88.
 
-[8]
+[11]
 File: ../img/Dull_Penelin.jpeg Graphic file (type bmp)
 <../img/Dull_Penelin.jpeg>
 File: ../img/Dendrogram.jpeg Graphic file (type bmp)
 <../img/Dendrogram.jpeg>
- [9]
+ [12]
 \openout4 = `main.pyg'.
 
  (_minted-main/default-pyg-prefix.pygstyle)
@@ -1394,7 +1399,7 @@ pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/040FC9531CEAE77EC032CD0990D4D4ECD1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/3599E8525194114A409FDF05F5AB5284D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
@@ -1402,7 +1407,7 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 \openout3 = `main.pyg'.
 
 
-(_minted-main/3130EC7AC740BA5A2D60201884BB0050D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/E9C8589C767BB805652A27EFCAC038B9D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout4 = `main.pyg'.
 
@@ -1411,16 +1416,16 @@ pygtex)
 pygtex)
 File: ../img/Data_yn_R.jpg Graphic file (type bmp)
 <../img/Data_yn_R.jpg>
- [10]
+ [13]
 \openout3 = `main.pyg'.
 
 
-(_minted-main/4EF831BADF858CCEDAF7A4AC0EE42EE3D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/A30C43C7FC36BE0790F4F5F9067D925CD1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/5B09A3AAD8DE8B2D67976EA631081759D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/F92489F7019E5CB2A68726DC2C9EE50AD1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 File: ../img/ScatterplotR.jpeg Graphic file (type bmp)
 <../img/ScatterplotR.jpeg>
@@ -1428,47 +1433,47 @@ File: ../img/ScatterplotR.jpeg Graphic file (type bmp)
 
 
 (_minted-main/5E2A87C1BCE635CBA05DFE68FCF7D79F19F985447EC54E8B82C17FA4B4D93AE9.
-pygtex) [11]
+pygtex) [14]
 \openout3 = `main.pyg'.
 
 
-(_minted-main/9CB8CFA32CDC62C79424CD293FB806BFD1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/0F1D1D6F722C892983149BF7D93566E0D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/327DFF5E821796DBE9B91204F3262157D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/5E8FD2B98D2B8BD88F95DA98AEC04B21D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/70D7DE2A116D1A1284964931EBD8B4B7D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/E923CD62B743521548DF05E860663355D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 File: ../img/Data3_yn_R.jpg Graphic file (type bmp)
 <../img/Data3_yn_R.jpg>
 \openout3 = `main.pyg'.
 
 
-(_minted-main/629EB4718E1E8CA45D8571914EF6137BD1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/8F97496FB26725AAA4BEBEC61972AF47D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 File: ../img/3clwstwrR.jpeg Graphic file (type bmp)
 <../img/3clwstwrR.jpeg>
- [12]
+ [15]
 \openout3 = `main.pyg'.
 
 
-(_minted-main/26AFCA7F61928EC937CB42D2B0D8B577D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/6D00F6673A898F01E1019E83F5793617D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 File: ../img/Data6_yn_R.jpg Graphic file (type bmp)
 <../img/Data6_yn_R.jpg>
 \openout3 = `main.pyg'.
 
 
-(_minted-main/07B08DFEFCD91A53FD6B54D0CFCC9A86D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/3037382DFA1C2A0B5EFC23570BA33854D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 File: ../img/6clwstwrR.jpeg Graphic file (type bmp)
 <../img/6clwstwrR.jpeg>
- [13]
+ [16]
 \openout4 = `main.pyg'.
 
 
@@ -1487,12 +1492,12 @@ pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/37D5636712300F29E8AEBCD73BD217C44FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/1E7F50A376954251B08E136F125565D84FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/B3AAC55B654E77F393309E147D0585274FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/DEAA0C4441F37CC39FEDC9180C299C7D4FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout4 = `main.pyg'.
 
@@ -1508,72 +1513,73 @@ File: ../img/tabl1.jpg Graphic file (type bmp)
 <../img/tabl1.jpg>
 \openout3 = `main.pyg'.
 
- [14]
-(_minted-main/D8E37D60A5C41A59711611E7AC9A54694FBEEAFC55D0059826E664B9BBCF3721.
+ [17]
+(_minted-main/E9894389E3CC4517928EDB60AA00F7534FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 File: ../img/Scatterpython.jpeg Graphic file (type bmp)
 <../img/Scatterpython.jpeg>
 \openout3 = `main.pyg'.
 
 
-(_minted-main/287B77542329F48D67E48BC6E0BCFC874FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/C9A10613C9D6BA94DEC9C44F7B1738314FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/199065406915E6291E456A854E4434804FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/C68306B504FB30D357731872BF0641D84FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 File: ../img/tabl2.jpg Graphic file (type bmp)
 <../img/tabl2.jpg>
- [15]
+ [18]
 \openout3 = `main.pyg'.
 
 
-(_minted-main/313D7F43B3FB494DAE325C4BBC2AB4D54FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/452789828FEC412AD6A6E7024971F2904FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 File: ../img/3clystwrpython.jpeg Graphic file (type bmp)
 <../img/3clystwrpython.jpeg>
 \openout3 = `main.pyg'.
 
 
-(_minted-main/17AD1044AC0CBB1E4D5F4D5664468A9C4FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/188C952A57B699DB473604A4E19F8EF94FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/199065406915E6291E456A854E4434804FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/C68306B504FB30D357731872BF0641D84FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 File: ../img/tabl3.jpg Graphic file (type bmp)
 <../img/tabl3.jpg>
- [16]
+ [19]
 \openout3 = `main.pyg'.
 
 
-(_minted-main/7692008EBEC9E094892029AB6EFAB20A4FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/8B4F5AE82C01062219B8C374C544E5494FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 File: ../img/6clystwrpython.jpeg Graphic file (type bmp)
 <../img/6clystwrpython.jpeg>
-) [17]
+) [20]
 \openout2 = `chapters/Atchweliad_logistaidd.aux'.
 
  (chapters/Atchweliad_logistaidd.tex
 Pennod 3.
-
-LaTeX Warning: Reference `Enghraifft_o_atchweliad_logistaidd' on page 18 undefi
-ned on input line 5.
-
 File: ../img/Atchweliad_logistaidd.jpeg Graphic file (type bmp)
 <../img/Atchweliad_logistaidd.jpeg>
-File: ../img/atchweliad_logistaidd_pwyntiau.jpeg Graphic file (type bmp)
-<../img/atchweliad_logistaidd_pwyntiau.jpeg>
-[18
+File: ../img/atchweliad_logistaidd_gyda_pwyntiau.jpeg Graphic file (type bmp)
+<../img/atchweliad_logistaidd_gyda_pwyntiau.jpeg>
+[21
 
 
 
 ]
 File: ../img/cymharu_llinol.jpeg Graphic file (type bmp)
 <../img/cymharu_llinol.jpeg>
- [19] [20]
+ [22] [23]
+Overfull \hbox (5.45183pt too wide) in paragraph at lines 87--88
+[]\TU/lmr/m/n/10 (ANGEN ADIO DARN AM Y DAU ALGORITHM AC YCHWANEGU REFERENCE AR 
+EI CYFER) 
+ []
+
 \openout4 = `main.pyg'.
 
 
@@ -1582,7 +1588,7 @@ pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/EF68AE41D0039FB19CA4F8453491982BD1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/885290C0B0D22D497104B4BB38B6D672D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout4 = `main.pyg'.
 
@@ -1592,24 +1598,25 @@ pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/C406C9ABDA7B5002ABB5F0D4A4B707F8D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/750881924743EE546947CC1D30D3A254D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/FB3BEF0748DD8A5D767D4248CB491FE0D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/D5EDCE978B347944AEB83542D5C15D06D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 File: ../img/data_diabetes_r.jpg Graphic file (type bmp)
 <../img/data_diabetes_r.jpg>
+ [24]
 \openout3 = `main.pyg'.
 
- [21]
-(_minted-main/9962ABC30C125DC581DFA180332B23B0D1B441A9AB0E232E9D4562FAA45AEAC6.
+
+(_minted-main/4E93E82ABB074DD009435E5EBDCF2650D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/4A85A98134C2D38C28474E36097A9152D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/C052010A8BC60C4CBF3239F8DAAFCC6CD1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout4 = `main.pyg'.
 
@@ -1621,17 +1628,21 @@ pygtex)
 
 (_minted-main/5AC0B0278E11C2000DC3DE3703B44C1319F985447EC54E8B82C17FA4B4D93AE9.
 pygtex)
-\openout3 = `main.pyg'.
+\openout4 = `main.pyg'.
 
 
-(_minted-main/ECA03EAF194D8D564C02A89D4BCF81C3D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/7E46B53C37345EA1396AB1F57FB2DA3219F985447EC54E8B82C17FA4B4D93AE9.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/B21599BF05DD249D68977F35B153A9D8D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/B52EC11C569B5DCABDD5F82C9AE89D2FD1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
-File: "allbwn.txt"  (verbatim)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/75C25DF85BFFB964A98B6362E0A8AC63D1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex) [25]
 \openout4 = `main.pyg'.
 
 
@@ -1644,24 +1655,24 @@ pygtex)
 pygtex)
 \openout3 = `main.pyg'.
 
- [22]
-(_minted-main/D9D7BB8793DC1532F9760234BC5D3788D1B441A9AB0E232E9D4562FAA45AEAC6.
+
+(_minted-main/4162D2DE616A1AB3F1D4EA9E704389E3D1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/CF6F966D7F4054BB1E7EED59B849CB03D1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/E0C09D509B6D372EEC9A29139917182BD1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/110F5A3A0974C1AB1CFBCE941BA1EE0CD1B441A9AB0E232E9D4562FAA45AEAC6.
+(_minted-main/935F701953465F0367611C4EE1066C9BD1B441A9AB0E232E9D4562FAA45AEAC6.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/C159D5E7286F12EA4E2E75D95B45D9A5D1B441A9AB0E232E9D4562FAA45AEAC6.
-pygtex) [23]
+(_minted-main/4BC45CC43335044DBFE5E8893A528E5ED1B441A9AB0E232E9D4562FAA45AEAC6.
+pygtex) [26]
 \openout4 = `main.pyg'.
 
 
@@ -1675,35 +1686,35 @@ pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/D84355330F03E34A8B541EDF347D5D434FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/CF758321D48D53C1951A6339C46292E14FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/0EF2F083C283913A20A6FDB04814011D4FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/3D2CC16144463F018A0D398F5DF1C0F54FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/199065406915E6291E456A854E4434804FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/C68306B504FB30D357731872BF0641D84FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 File: ../img/data_diabetes_python.jpg Graphic file (type bmp)
 <../img/data_diabetes_python.jpg>
 \openout3 = `main.pyg'.
 
 
-(_minted-main/B8128B0CB6100D474C56B33D1F707BAD4FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/1B02BC262D5B1652BB5DA55EE4D4A9914FBEEAFC55D0059826E664B9BBCF3721.
+pygtex) [27]
+\openout3 = `main.pyg'.
+
+
+(_minted-main/B615963FB43A7DB710038CE0117909C54FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/9EABD4403A8757B7EE8610C8F4355D5A4FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/82DF8635378EB2421BFAA132BE1348D14FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
-\openout3 = `main.pyg'.
-
-
-(_minted-main/8870567F48353B77B5DCE3DFA05143174FBEEAFC55D0059826E664B9BBCF3721.
-pygtex) [24]
 \openout4 = `main.pyg'.
 
 
@@ -1712,73 +1723,83 @@ pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/04C9F3E0F684BA8BC73BBC036BA68E394FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/1C27FD356112392A5E3AB590902998624FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/747C6FB049AE3E32053D0A8EDCCB4E014FBEEAFC55D0059826E664B9BBCF3721.
-pygtex)
-File: "allbwn_p2.txt"  (verbatim)
-\openout3 = `main.pyg'.
-
-
-(_minted-main/0CA62AFE203ED636373A8D7B7CDAD6034FBEEAFC55D0059826E664B9BBCF3721.
-pygtex)
-File: "allbwn_p1.txt"  (verbatim)
-\openout3 = `main.pyg'.
-
-
-(_minted-main/FDA3A42A770CAE6196E3F3CC13681AF64FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/7901F003E7319FB8D4AB6F50FCB20DA74FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
 \openout3 = `main.pyg'.
 
 
-(_minted-main/AC8043CAC8FE492F7243D1EBAA45FD8E4FBEEAFC55D0059826E664B9BBCF3721.
+(_minted-main/495D98D03DA5A3DBE9F083AE31AA77B94FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
-File: "allbwn_p3.txt"  (verbatim)
 \openout3 = `main.pyg'.
 
- [25]
-(_minted-main/950BD7A2FEB996A0263FECDE8E082FFE4FBEEAFC55D0059826E664B9BBCF3721.
+
+(_minted-main/67358B1A3847DA6690A32C30D92FD1914FBEEAFC55D0059826E664B9BBCF3721.
 pygtex)
-File: "allbwn_p4.txt"  (verbatim)
-) [26]
+\openout3 = `main.pyg'.
+
+ [28]
+(_minted-main/14BF57F0F8F2DA020B3DBCBB973A7EA64FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)
+\openout3 = `main.pyg'.
+
+
+(_minted-main/78C2AA0B2FFA3C535AB82B215F0ABEC54FBEEAFC55D0059826E664B9BBCF3721.
+pygtex)) [29]
 \openout2 = `chapters/Termau.aux'.
 
  (chapters/Termau.tex
 Pennod 4.
-) [27
+) [30
 
 
 
-] (main.bbl) [28
+] (main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+[]\TU/lmr/m/n/10 Adnoddau technolegau iaith.  []$[][][][] [] [] [] [][][][][][]
+[][][] [] [][][][][] [] [][][][][][][][][][][][] []
+ []
 
 
-]
+Underfull \hbox (badness 1533) in paragraph at lines 50--54
+[]\TU/lmr/m/n/10 Technological action plan.  []$[][][][][] [] [] [] [][][] [] [
+][][][][] [] [][][][][] [] [][][][][][][] [] [][][][][] [] [][][][][][][][][][]
+[][] [] [][][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
+[]\TU/lmr/m/n/10 Videos ar sut i rhaglennu yn python.  []$[][][][][] [] [] [] [
+][][] [] [][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][] []
+ []
+
+[31
+
+
+]) [32]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
- (main.aux (frontcover.aux) (diolchadau.aux)
-(chapters/Cyflwyniad.aux) (chapters/Clystyru_k_modd.aux)
-(chapters/Atchweliad_logistaidd.aux) (chapters/Termau.aux))
+ (main.aux (frontcover.aux) (diolchadau.aux) (chapters/Cyflwyniad.aux) (chapter
+s/Clystyru_k_modd.aux) (chapters/Atchweliad_logistaidd.aux)
+(chapters/Termau.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 57470D4A749BACB6C6BC83D75544C340;1742.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: EEBE2052FCE663FB2983F6B16AE26460;1742.
 runsystem(del main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 38571 strings out of 427232
- 740756 string characters out of 3141650
- 911309 words of memory out of 3000000
- 42323 multiletter control sequences out of 15000+200000
- 547200 words of font info for 96 fonts, out of 3000000 for 9000
+ 38590 strings out of 427232
+ 741702 string characters out of 3141650
+ 919075 words of memory out of 3000000
+ 42339 multiletter control sequences out of 15000+200000
+ 548444 words of font info for 102 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,8n,67p,814b,2146s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,8n,67p,840b,2146s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (29 pages).
+Output written on main.pdf (33 pages).

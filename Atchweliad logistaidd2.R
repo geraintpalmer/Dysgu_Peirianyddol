@@ -39,3 +39,25 @@ y1 <- c(y1, rbinom(n = 50,size = 1, prob = 0.95 ))
 y1 <- c(y1, rbinom(n = 50,size = 1, prob = 0.5 ))
 y1 <- c(y1, rbinom(n = 50,size = 1, prob = 0.05 ))
 abline(lm(formula = y1 ~ x1 ))
+abline(v=seq(from = 50, to = 140, by = 20), col = "blue" )
+text(x = 60, y = 0.5, labels = "0.07", col = "blue")
+text(x = 80, y = 0.5, labels = "0.33", col = "blue")
+text(x = 100, y = 0.5, labels = "0.70", col = "blue")
+text(x = 120, y = 0.5, labels = "1", col = "blue")
+text(x = 140, y = 0.5, labels = "1", col = "blue")
+
+group5070 <- which(x1<=70 & x1 >= 50)
+loggroup5070 <- y1[group5070]
+sum(loggroup5070)/length(loggroup5070)
+
+group7090 <- which(x1<=90 & x1 >= 70)
+loggroup7090 <- y1[group7090]
+sum(loggroup7090)/length(loggroup7090)
+
+group90110 <- which(x1<=110 & x1 >= 90)
+loggroup90110 <- y1[group90110]
+sum(loggroup90110)/length(loggroup90110)
+
+group110130 <- which(x1<=130 & x1 >= 110)
+loggroup110130 <- y1[group110130]
+sum(loggroup110130)/length(loggroup110130)

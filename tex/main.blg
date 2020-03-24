@@ -3,8 +3,21 @@ A level-1 auxiliary file: frontcover.aux
 A level-1 auxiliary file: diolchadau.aux
 A level-1 auxiliary file: chapters/Cyflwyniad.aux
 A level-1 auxiliary file: chapters/Clystyru_k_modd.aux
+A level-1 auxiliary file: chapters/Atchweliad_logistaidd.aux
 A level-1 auxiliary file: chapters/Termau.aux
 The style file: plain.bst
 Database file #1: bibliography.bib
+Warning--to sort, need author or key in Cyfrifiadureg-maths
+Warning--to sort, need author or key in codeclub
+Warning--to sort, need author or key in technocamps
+Warning--to sort, need author or key in python-sgiliauymchwil
+Warning--to sort, need author or key in technolegau-iaith
+Warning--to sort, need author or key in botio
+Warning--to sort, need author or key in github-technolegauiaith
+Warning--to sort, need author or key in youtube
+Warning--to sort, need author or key in mathemateg
+Warning--to sort, need author or key in kagglesurvey
+Warning--to sort, need author or key in cymraeg2050
+Warning--to sort, need author or key in cymraeg2050tech
 Warning--empty journal in K-means-clustering
-(There was 1 warning)
+(There were 13 warnings)

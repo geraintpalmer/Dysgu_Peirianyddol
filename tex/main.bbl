@@ -1,4 +1,88 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{kagglesurvey}
+2018 kaggle ml and ds survey.
+\newblock \url{https://www.kaggle.com/sudhirnl7/data-science-survey-2018}.
+\newblock Accessed: 2020-03-24.
+
+\bibitem{codeclub}
+Adnoddau code club.
+\newblock \url{https://projects.raspberrypi.org/cy-GB/codeclub}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{mathemateg}
+Adnoddau mathemateg ar gyfer ysgolion.
+\newblock \url{https://www.mathemateg.com/}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{technocamps}
+Adnoddau technocamps.
+\newblock \url{https://www.technocamps.com/cy/resources}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{technolegau-iaith}
+Adnoddau technolegau iaith.
+\newblock \url{http://techiaith.cymru/yr-adnoddau/llawlyfr-technolegau-iaith/}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{botio}
+App botio.
+\newblock \url{https://apps.apple.com/us/app/botio/id1296278646?ls=1}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{Cyfrifiadureg-maths}
+Cyfrifiadureg ar gyfer mathemateg.
+\newblock \url{https://vknight.org/cfm/cy/}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{python-sgiliauymchwil}
+Sgiliau ymchwil cyfrifiadurol.
+\newblock \url{https://sgiliauymchwilcyfrifiadurol.github.io/}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{cymraeg2050}
+Targed o miliwn o siaradwyr cymraeg erbyn 2050.
+\newblock
+  \url{https://gov.wales/sites/default/files/publications/2018-12/cymraeg-2050-welsh-language-strategy.pdf}.
+\newblock Accessed: 2020-03-24.
+
+\bibitem{cymraeg2050tech}
+Technological action plan.
+\newblock
+  \url{https://gov.wales/sites/default/files/publications/2018-12/welsh-language-technology-and-digital-media-action-plan.pdf}.
+\newblock Accessed: 2020-03-24.
+
+\bibitem{youtube}
+Videos ar sut i rhaglennu yn python.
+\newblock
+  \url{https://www.youtube.com/playlist?list=PLSkPgScy-DkFdCzwJW9X_B9IfTouojem7}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{github-technolegauiaith}
+Ystorfeydd technolegau iaith.
+\newblock \url{https://github.com/porthtechnolegauiaith}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{dysgu-peirianyddol2}
+Ethem Alpaydin.
+\newblock {\em Introduction to Machine Learning}.
+\newblock MIT Press, 2014.
+
+\bibitem{Logistic-regression}
+K.Dietz; M.Gail;~K.Krickeberg; B.Singer.
+\newblock {\em Logistic regression: a self-learning text}.
+\newblock New York : Springer, 1994.
+
+\bibitem{Algebra-llinol}
+Alun Morris.
+\newblock Algebra llinol.
+\newblock \url{https://llyfrgell.porth.ac.uk/View.aspx?id=1716~4p~QbzBunJu}.
+\newblock Accessed: 2020-03-14.
+
+\bibitem{dysgu-peirianyddol}
+Alexander~Zien Olivier~Chapelle, Bernhard~Schölkopf.
+\newblock {\em Introduction to Semi-Supervised Learning}.
+\newblock MIT Press, 2006.
 
 \bibitem{K-means-clustering}
 David M. J. Tax;~Ferdinand van der Heijden; Robert Duin; Dick~de Ridder.

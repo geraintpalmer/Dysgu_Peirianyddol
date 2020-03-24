@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} uchderpwysau \PYG{o}{\PYGZlt{}\PYGZhy{}} read.csv\PYG{p}{(}\PYG{l+s}{\PYGZdq{}C:/Users/User/Desktop/Dysgu\PYGZus{}Peirianyddol/heightvsweight.csv\PYGZdq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}} View\PYG{p}{(}uchderpwysau\PYG{p}{)}
+\end{Verbatim}

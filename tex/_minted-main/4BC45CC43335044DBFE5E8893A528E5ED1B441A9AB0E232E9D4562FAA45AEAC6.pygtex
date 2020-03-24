@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} \PYG{k+kp}{unname}\PYG{p}{(}\PYG{k+kp}{round}\PYG{p}{(}predict\PYG{p}{(}object \PYG{o}{=} atchweliad\PYG{p}{,}
+\PYG{o}{+}                      newdata \PYG{o}{=} \PYG{k+kt}{data.frame}\PYG{p}{(}Uchder \PYG{o}{=} \PYG{l+m}{160}\PYG{p}{,}
+\PYG{o}{+}                                           Pwysau \PYG{o}{=} \PYG{l+m}{92}\PYG{p}{,}
+\PYG{o}{+}                                           MaintGwasg \PYG{o}{=} \PYG{l+m}{34}\PYG{p}{,}
+\PYG{o}{+}                                           Oed \PYG{o}{=} \PYG{l+m}{20}\PYG{p}{,}
+\PYG{o}{+}                                           Rhyw \PYG{o}{=} \PYG{l+s}{\PYGZdq{}Benyw\PYGZdq{}}\PYG{p}{),}
+\PYG{o}{+}                      type \PYG{o}{=} \PYG{l+s}{\PYGZdq{}response\PYGZdq{}}\PYG{p}{),}
+\PYG{o}{+}              digits \PYG{o}{=} \PYG{l+m}{0}\PYG{p}{))}
+\PYG{o}{+}
+\PYG{l+m}{1}
+\end{Verbatim}

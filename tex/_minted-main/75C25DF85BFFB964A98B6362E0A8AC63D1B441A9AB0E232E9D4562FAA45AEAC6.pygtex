@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZgt{}} atchweliad\PYG{o}{\PYGZdl{}}coefficients
+ \PYG{p}{(}Intercept\PYG{p}{)}       Uchder       Pwysau          Oed
+\PYG{l+m}{22.858432583} \PYG{l+m}{\PYGZhy{}0.254347133}  \PYG{l+m}{0.215272873}  \PYG{l+m}{0.057360113}
+   RhywGwryw   MaintGwasg
+\PYG{l+m}{\PYGZhy{}8.074052403} \PYG{l+m}{\PYGZhy{}0.003206262}
+\end{Verbatim}
